@@ -5,5 +5,5 @@ class Services {
   final Icon icon;
   final String route;
 
-  Services({required this.title, required this.icon, required this.route});
+  Services({this.title, this.icon, this.route});
 }

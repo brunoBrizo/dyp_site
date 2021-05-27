@@ -7,9 +7,9 @@ class FooterItem {
   final String text2;
 
   FooterItem({
-    required this.icon,
-    required this.title,
-    required this.text1,
-    required this.text2,
+    this.icon,
+    this.title,
+    this.text1,
+    this.text2,
   });
 }

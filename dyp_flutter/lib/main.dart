@@ -1,6 +1,6 @@
 import 'package:dyp/pages/alarmas_page.dart';
 import 'package:dyp/pages/cctv_page.dart';
-import 'package:dyp/pages/contacto_page.dart';
+import 'package:dyp/pages/contact/contacto_page.dart';
 import 'package:dyp/pages/control_acceso_page.dart';
 import 'package:dyp/pages/incendios_page.dart';
 import 'package:dyp/pages/inicio_page.dart';
@@ -12,8 +12,12 @@ import 'package:dyp/pages/video_porteros_page.dart';
 import 'package:dyp/routes.dart';
 import 'package:flutter/material.dart';
 import 'package:responsive_framework/responsive_framework.dart';
+import 'package:url_strategy/url_strategy.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
+  setPathUrlStrategy();
   runApp(MyApp());
 }
 
@@ -22,7 +26,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       builder: (context, widget) => ResponsiveWrapper.builder(
-          BouncingScrollWrapper.builder(context, widget!),
+          BouncingScrollWrapper.builder(context, widget),
           maxWidth: 2460,
           minWidth: 450,
           defaultScale: true,
@@ -67,7 +71,11 @@ class MyApp extends StatelessWidget {
           }
         });
       },
-      theme: ThemeData.light(),
+      theme: ThemeData(
+          brightness: Brightness.light,
+          primarySwatch: Colors.lightBlue,
+          accentColor: Colors.amber,
+          textTheme: GoogleFonts.robotoTextTheme(Theme.of(context).textTheme)),
       debugShowCheckedModeBanner: false,
     );
   }

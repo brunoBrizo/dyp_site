@@ -73,7 +73,6 @@ class ServicesSection extends StatelessWidget {
   }
 
   Widget _buildUi(BuildContext context, double width) {
-    // we need the context to get maxWidth before the constraints below
     return ResponsiveWrapper(
       maxWidth: width,
       minWidth: width,
@@ -199,37 +198,40 @@ class ServicesSection extends StatelessWidget {
   }
 
   _drawItem(BuildContext context, Services service) {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: [
-        IconButton(
-            iconSize: 60.0,
-            icon: service.icon,
-            onPressed: () {
-              _navigation(context, service.route);
-            }),
-        SizedBox(
-          width: 15.0,
-        ),
-        Expanded(
-          child: GestureDetector(
-            onTap: () {
-              _navigation(context, service.route);
-            },
-            child: MouseRegion(
-              cursor: SystemMouseCursors.click,
-              child: Text(
-                service.title,
-                style: GoogleFonts.oswald(
-                  fontSize: 22.0,
-                  fontWeight: FontWeight.w700,
-                  color: textPrimary,
+    return Material(
+      elevation: 10.0,
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          IconButton(
+              iconSize: 60.0,
+              icon: service.icon,
+              onPressed: () {
+                _navigation(context, service.route);
+              }),
+          SizedBox(
+            width: 15.0,
+          ),
+          Expanded(
+            child: GestureDetector(
+              onTap: () {
+                _navigation(context, service.route);
+              },
+              child: MouseRegion(
+                cursor: SystemMouseCursors.click,
+                child: Text(
+                  service.title,
+                  style: GoogleFonts.oswald(
+                    fontSize: 22.0,
+                    fontWeight: FontWeight.w700,
+                    color: textPrimary,
+                  ),
                 ),
               ),
             ),
           ),
-        ),
-      ],
+        ],
+      ),
     );
   }
 }

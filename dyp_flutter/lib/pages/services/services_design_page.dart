@@ -20,12 +20,12 @@ class ServicesDesignPage extends StatelessWidget {
   final String saberMasTexto;
 
   ServicesDesignPage(
-      {required this.image,
-      required this.title,
-      required this.text1,
-      required this.text2,
-      required this.text3,
-      required this.saberMasTexto});
+      {this.image,
+      this.title,
+      this.text1,
+      this.text2,
+      this.text3,
+      this.saberMasTexto});
 
   @override
   Widget build(BuildContext context) {

@@ -1,19 +1,14 @@
 import 'package:dyp/components/color.dart';
 import 'package:dyp/components/constants.dart';
+import 'package:dyp/components/typography.dart';
 import 'package:dyp/models/footer_item.dart';
 import 'package:dyp/utils/screen_helper.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:responsive_framework/responsive_framework.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 final List<FooterItem> footerItems = [
-  FooterItem(
-    icon: Icon(Icons.location_on_outlined),
-    title: "DIRECCIÓN",
-    text1: "Calle 123",
-    text2: "Departamento",
-  ),
   FooterItem(
     icon: Icon(Icons.phone_callback_outlined),
     title: "TELÉFONO",
@@ -29,8 +24,8 @@ final List<FooterItem> footerItems = [
   FooterItem(
     icon: Icon(Icons.phone_iphone_rounded),
     title: "WHATSAPP",
-    text1: "+598 9057586",
-    text2: "+598 9057586",
+    text1: "+598 95022190",
+    text2: "+55 5591467212",
   )
 ];
 
@@ -61,7 +56,7 @@ Widget _buildUi(double width, BuildContext context) {
       child: LayoutBuilder(
         builder: (context, constraints) {
           return Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               Padding(
                 padding: EdgeInsets.symmetric(vertical: 40.0),
@@ -90,9 +85,7 @@ _drawLastLine(BuildContext context) {
           "Copyright (c) " +
               _getCurrentYear().toString().trim() +
               " DyP Distribuciones y Proyectos",
-          style: TextStyle(
-            color: textSecondary,
-          ),
+          style: menuAndFooterText,
         ),
       ),
       Padding(
@@ -101,38 +94,17 @@ _drawLastLine(BuildContext context) {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             GestureDetector(
-              onTap: () {},
+              onTap: () async {
+                await launch('https://arkamsoftware.firebaseapp.com/');
+              },
               child: MouseRegion(
                 cursor: SystemMouseCursors.click,
                 child: Text(
-                  "Privacy Policy",
-                  style: TextStyle(
-                    color: textSecondary,
-                  ),
+                  "Designed by Arkam Software",
+                  style: menuAndFooterText,
                 ),
               ),
             ),
-            Container(
-              padding: EdgeInsets.symmetric(horizontal: 8.0),
-              child: Text(
-                "|",
-                style: TextStyle(
-                  color: kCaptionColor,
-                ),
-              ),
-            ),
-            GestureDetector(
-              onTap: () {},
-              child: MouseRegion(
-                cursor: SystemMouseCursors.click,
-                child: Text(
-                  "Terms & Conditions",
-                  style: TextStyle(
-                    color: textSecondary,
-                  ),
-                ),
-              ),
-            )
           ],
         ),
       )
@@ -177,11 +149,7 @@ _drawFooterItems(BuildContext context, BoxConstraints constraints) {
                         Expanded(
                           child: Text(
                             footerItem.title,
-                            style: GoogleFonts.oswald(
-                              fontSize: 18.0,
-                              fontWeight: FontWeight.w700,
-                              color: textSecondary,
-                            ),
+                            style: menuAndFooterText,
                           ),
                         ),
                       ],
@@ -204,9 +172,7 @@ _drawFooterItems(BuildContext context, BoxConstraints constraints) {
                           cursor: SystemMouseCursors.click,
                           child: Text(
                             "${footerItem.text1}\n",
-                            style: TextStyle(
-                              color: textSecondary,
-                            ),
+                            style: menuAndFooterText,
                           ),
                         ),
                       ),
@@ -218,9 +184,7 @@ _drawFooterItems(BuildContext context, BoxConstraints constraints) {
                           cursor: SystemMouseCursors.click,
                           child: Text(
                             "${footerItem.text2}",
-                            style: TextStyle(
-                              color: textSecondary,
-                            ),
+                            style: menuAndFooterText,
                           ),
                         ),
                       ),

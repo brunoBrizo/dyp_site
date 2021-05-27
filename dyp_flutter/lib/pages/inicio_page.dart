@@ -28,6 +28,9 @@ class InicioPage extends StatelessWidget {
               height: sizedBoxHeightAfterCarousel(context),
             ),
             ServicesSection(),
+            SizedBox(
+              height: 20.0,
+            ),
             Footer()
             //getServicesSection(context)
           ],
