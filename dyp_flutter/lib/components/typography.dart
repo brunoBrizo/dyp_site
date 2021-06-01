@@ -25,3 +25,9 @@ TextStyle buttonSubMenuTextStyle =
 
 const TextStyle menuAndFooterText =
     TextStyle(fontSize: 16, color: Colors.black, fontWeight: FontWeight.normal);
+
+const TextStyle gridTitle =
+    TextStyle(fontSize: 18, color: Colors.white, fontWeight: FontWeight.bold);
+
+const TextStyle gridButtonTextStyle =
+    TextStyle(fontSize: 16, color: Colors.white, fontWeight: FontWeight.normal);

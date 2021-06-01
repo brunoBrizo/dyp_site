@@ -9,3 +9,5 @@ const Color kDangerColor = Color.fromRGBO(249, 77, 30, 1);
 const Color kCaptionColor = Color.fromRGBO(166, 177, 187, 1);
 
 const kDefaultPadding = 20.0;
+
+const String gridButtonText = 'Ver más';

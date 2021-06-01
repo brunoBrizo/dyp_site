@@ -10,7 +10,7 @@ class ContactoPage extends StatelessWidget {
   Widget build(BuildContext context) {
     final width = MediaQuery.of(context).size.width;
     double containerPadding =
-        width > 1300 ? kDefaultPadding * 2 : kDefaultPadding * 2;
+        width > 1300 ? kDefaultPadding * 3 : kDefaultPadding * 2;
     return Scaffold(
       backgroundColor: Colors.white60,
       body: SingleChildScrollView(
@@ -33,7 +33,8 @@ class ContactoPage extends StatelessWidget {
                 height: 30.0,
               ),
               Container(
-                width: width * 0.7,
+                padding: EdgeInsets.symmetric(vertical: 40.0),
+                width: width * 0.6,
                 child: Material(
                   elevation: 15,
                   // color: Colors.white,

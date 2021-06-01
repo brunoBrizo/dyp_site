@@ -38,3 +38,8 @@ flutter:
   uses-material-design: true
   assets:
     - assets/images/
+    - assets/images/flags/
+    - assets/images/camaras/
+    - assets/images/alarmas/
+    - assets/pdf/camaras/
+    - assets/json/

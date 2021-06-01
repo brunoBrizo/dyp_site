@@ -1,5 +1,5 @@
 import 'package:dyp/pages/alarmas_page.dart';
-import 'package:dyp/pages/cctv_page.dart';
+import 'package:dyp/pages/cctv/cctv_page.dart';
 import 'package:dyp/pages/contact/contacto_page.dart';
 import 'package:dyp/pages/control_acceso_page.dart';
 import 'package:dyp/pages/incendios_page.dart';
@@ -39,7 +39,7 @@ class MyApp extends StatelessWidget {
           ],
           background: Container(color: Color(0xFFF5F5F5))),
       initialRoute: Routes.inicio,
-      home: InicioPage(),
+      home: CctvPage(),
       onGenerateRoute: (RouteSettings settings) {
         return Routes.fadeThrough(settings, (context) {
           switch (settings.name) {
