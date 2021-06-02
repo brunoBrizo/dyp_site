@@ -1,7 +1,7 @@
 import 'dart:convert';
 
 import 'package:dyp/models/product_model.dart';
-import 'package:dyp/pages/grid_products/product_card.dart';
+import 'package:dyp/pages/products/product_card.dart';
 import 'package:dyp/utils/screen_helper.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart' show rootBundle;
@@ -243,6 +243,7 @@ class _GridProductsMobileState extends State<GridProductsMobile> {
     );
   }
 
+  // ignore: unused_element
   _getHeightForGridView(Size size) {
     final height = size.height;
     print('height: ' + height.toString());

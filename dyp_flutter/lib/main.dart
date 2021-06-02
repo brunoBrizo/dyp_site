@@ -1,14 +1,5 @@
-import 'package:dyp/pages/alarmas_page.dart';
 import 'package:dyp/pages/cctv/cctv_page.dart';
-import 'package:dyp/pages/contact/contacto_page.dart';
-import 'package:dyp/pages/control_acceso_page.dart';
-import 'package:dyp/pages/incendios_page.dart';
 import 'package:dyp/pages/inicio_page.dart';
-import 'package:dyp/pages/mantenimientos_page.dart';
-import 'package:dyp/pages/proyectos_page.dart';
-import 'package:dyp/pages/quienes_somos_page.dart';
-import 'package:dyp/pages/telefonia_ip_page.dart';
-import 'package:dyp/pages/video_porteros_page.dart';
 import 'package:dyp/routes.dart';
 import 'package:flutter/material.dart';
 import 'package:responsive_framework/responsive_framework.dart';
@@ -18,6 +9,7 @@ import 'package:google_fonts/google_fonts.dart';
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
   setPathUrlStrategy();
+  Flurorouter.setupRouter();
   runApp(MyApp());
 }
 
@@ -38,39 +30,11 @@ class MyApp extends StatelessWidget {
             ResponsiveBreakpoint.autoScale(2460, name: "4K"),
           ],
           background: Container(color: Color(0xFFF5F5F5))),
-      initialRoute: Routes.inicio,
-      home: CctvPage(),
-      onGenerateRoute: (RouteSettings settings) {
-        return Routes.fadeThrough(settings, (context) {
-          switch (settings.name) {
-            case Routes.inicio:
-              return InicioPage();
-            case Routes.quienesSomos:
-              return QuienesSomosPage();
-            case Routes.contacto:
-              return ContactoPage();
-            case Routes.alarmas:
-              return AlarmasPage();
-            case Routes.cctv:
-              return CctvPage();
-            case Routes.controlAcceso:
-              return ControlAccesoPage();
-            case Routes.incendios:
-              return IncendiosPage();
-            case Routes.mantenimientos:
-              return MantenimientosPage();
-            case Routes.proyectos:
-              return ProyectosPage();
-            case Routes.telefoniaIp:
-              return TelefoniaIpPage();
-            case Routes.videoPorteros:
-              return VideoPorterosPage();
-
-            default:
-              return SizedBox.shrink();
-          }
-        });
-      },
+      initialRoute: '/',
+      home: InicioPage(),
+      onGenerateRoute: Flurorouter.router.generator,
+      // onUnknownRoute: (settings) =>
+      //     MaterialPageRoute(builder: (context) => CctvPage()),
       theme: ThemeData(
           brightness: Brightness.light,
           primarySwatch: Colors.lightBlue,

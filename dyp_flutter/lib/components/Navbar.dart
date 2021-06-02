@@ -2,8 +2,6 @@ import 'package:dyp/components/typography.dart';
 import 'package:dyp/utils/utils.dart';
 import 'package:flutter/material.dart';
 
-import '../routes.dart';
-
 class Navbar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -33,7 +31,7 @@ class DesktopNavbar extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: <Widget>[
                     GestureDetector(
-                      onTap: () => Navigator.pushNamed(context, Routes.inicio),
+                      onTap: () => navigate(context, '/'),
                       child: Text(
                         "DyP Distribuciones y Proyectos",
                         style: headlineTextStyle,
@@ -42,8 +40,7 @@ class DesktopNavbar extends StatelessWidget {
                     Row(
                       children: <Widget>[
                         TextButton(
-                          onPressed: () =>
-                              Navigator.pushNamed(context, Routes.inicio),
+                          onPressed: () => navigate(context, '/'),
                           child: Text(
                             "Inicio",
                             style: buttonTextStyle,
@@ -53,8 +50,7 @@ class DesktopNavbar extends StatelessWidget {
                           width: 30,
                         ),
                         TextButton(
-                          onPressed: () =>
-                              Navigator.pushNamed(context, Routes.quienesSomos),
+                          onPressed: () => navigate(context, '/quienes-somos'),
                           child: Text(
                             "¿Quiénes Somos?",
                             style: buttonTextStyle,
@@ -64,8 +60,7 @@ class DesktopNavbar extends StatelessWidget {
                           width: 30,
                         ),
                         TextButton(
-                          onPressed: () =>
-                              Navigator.pushNamed(context, Routes.contacto),
+                          onPressed: () => navigate(context, '/contacto'),
                           child: Text(
                             "Contacto",
                             style: buttonTextStyle,
@@ -116,7 +111,7 @@ class MobileNavbar extends StatelessWidget {
             margin: EdgeInsets.symmetric(vertical: 5),
             child: Column(children: <Widget>[
               GestureDetector(
-                onTap: () => Navigator.pushNamed(context, Routes.inicio),
+                onTap: () => navigate(context, '/'),
                 child: Center(
                   child: Text(
                     "Distribuciones y Proyectos",
@@ -130,8 +125,7 @@ class MobileNavbar extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
                     TextButton(
-                      onPressed: () =>
-                          Navigator.pushNamed(context, Routes.inicio),
+                      onPressed: () => navigate(context, '/'),
                       child: Text(
                         "Inicio",
                         style: buttonTextStyle,
@@ -141,8 +135,7 @@ class MobileNavbar extends StatelessWidget {
                       width: 30,
                     ),
                     TextButton(
-                      onPressed: () =>
-                          Navigator.pushNamed(context, Routes.quienesSomos),
+                      onPressed: () => navigate(context, '/quienes-somos'),
                       child: Text(
                         "¿Quiénes Somos?",
                         style: buttonTextStyle,
@@ -152,8 +145,7 @@ class MobileNavbar extends StatelessWidget {
                       width: 30,
                     ),
                     TextButton(
-                      onPressed: () =>
-                          Navigator.pushNamed(context, Routes.contacto),
+                      onPressed: () => navigate(context, '/contacto'),
                       child: Text(
                         "Contacto",
                         style: buttonTextStyle,

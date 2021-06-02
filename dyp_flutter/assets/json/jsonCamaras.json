@@ -3,7 +3,7 @@
     [
     	{
         "name":"DAHUA B1A11P",
-
+        "tipo": "CCTV",
         "image":"assets/images/camaras/b1a11p.png",
         "url": "/B1A11P",
         "description": "BULLET 720P LENTE 2.8MM 20MTS IR",
@@ -11,6 +11,7 @@
     	}, 
     	{
         "name":"DAHUA DH-HAC-HDBW1230E",
+        "tipo": "CCTV",
         "image":"assets/images/camaras/DH-HAC-HDBW1230E.jpeg",
         "url": "/DH-HAC-HDBW1230E",
         "description": "StarLight 4 en 1 - 1080P IK10",
@@ -18,6 +19,7 @@
     	}, 
     	{
         "name":"DAHUA DH-HAC-HFW1220B",
+        "tipo": "CCTV",
         "image":"assets/images/camaras/DH-HAC-HFW1220B.png",
         "url": "/DH-HAC-HFW1220B",
         "description": "Imagen de DAHUA DH-HAC-HFW1220B BULLET CVI 1080 IR50 MTS.",
@@ -25,6 +27,7 @@
     	}, 
     	{
         "name":"DAHUA DH-HAC-HF3231E",
+        "tipo": "CCTV",
         "image":"assets/images/camaras/DH-HAC-HF3231E.png",
         "url": "/DH-HAC-HF3231E",
         "description": "CÁMARA BOX 1080 P",
@@ -32,6 +35,7 @@
     	}, 
     	{
         "name":"DAHUA DH-HAC-HFW1220R-VF",
+        "tipo": "CCTV",
         "image":"assets/images/camaras/DH-HAC-HFW1220R-VF.png",
         "url": "/DH-HAC-HFW1220R-VF",
         "description": "BULLET 1080 VARIFOCAL 2mp 2.7-13.5mm",
@@ -39,6 +43,7 @@
     	}, 
     	{
         "name":"DAHUA EB2401P-0118B",
+        "tipo": "CCTV",
         "image":"assets/images/camaras/EB2401P-0118B.jpeg",
         "url": "/EB2401P-0118B",
         "description": "FISHEYE 4 MPX. HD IK10",
@@ -46,6 +51,7 @@
     	}, 
     	{
         "name":"DAHUA EB5500",
+        "tipo": "CCTV",
         "image":"assets/images/camaras/EB5500.png",
         "url": "/EB5500",
         "description": "FISHEYE",

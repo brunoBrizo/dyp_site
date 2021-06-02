@@ -29,3 +29,7 @@ TipoPantalla getTipoPantalla(Size size) {
 sendWhatsAppMessage(String phone, String message) async {
   await launch("https://wa.me/$phone?text=$message");
 }
+
+navigate(BuildContext context, String routeName) {
+  Navigator.pushNamed(context, routeName);
+}

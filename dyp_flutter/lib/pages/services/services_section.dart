@@ -2,11 +2,11 @@ import 'package:dyp/components/color.dart';
 import 'package:dyp/components/constants.dart';
 import 'package:dyp/models/services.dart';
 import 'package:dyp/utils/screen_helper.dart';
+import 'package:dyp/utils/utils.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:responsive_framework/responsive_framework.dart';
-import 'package:dyp/routes.dart';
 
 final List<Services> services = [
   Services(
@@ -129,38 +129,6 @@ class ServicesSection extends StatelessWidget {
     );
   }
 
-  _navigation(BuildContext context, String route) {
-    switch (route) {
-      case Routes.alarmas:
-        Navigator.pushNamed(context, Routes.alarmas);
-        break;
-      case Routes.cctv:
-        Navigator.pushNamed(context, Routes.cctv);
-        break;
-      case Routes.controlAcceso:
-        Navigator.pushNamed(context, Routes.controlAcceso);
-        break;
-      case Routes.incendios:
-        Navigator.pushNamed(context, Routes.incendios);
-        break;
-      case Routes.mantenimientos:
-        Navigator.pushNamed(context, Routes.mantenimientos);
-        break;
-      case Routes.proyectos:
-        Navigator.pushNamed(context, Routes.proyectos);
-        break;
-      case Routes.telefoniaIp:
-        Navigator.pushNamed(context, Routes.telefoniaIp);
-        break;
-      case Routes.videoPorteros:
-        Navigator.pushNamed(context, Routes.videoPorteros);
-        break;
-
-      default:
-        return SizedBox.shrink();
-    }
-  }
-
   _getMaxCrossAxisExtent(BuildContext context, BoxConstraints constraints) {
     double maxCrossAxisExtent = 0;
     if (ScreenHelper.isDesktop(context)) {
@@ -207,7 +175,7 @@ class ServicesSection extends StatelessWidget {
               iconSize: 60.0,
               icon: service.icon,
               onPressed: () {
-                _navigation(context, service.route);
+                navigate(context, service.route);
               }),
           SizedBox(
             width: 15.0,
@@ -215,7 +183,7 @@ class ServicesSection extends StatelessWidget {
           Expanded(
             child: GestureDetector(
               onTap: () {
-                _navigation(context, service.route);
+                navigate(context, service.route);
               },
               child: MouseRegion(
                 cursor: SystemMouseCursors.click,

@@ -1,7 +1,7 @@
 import 'package:dyp/components/Navbar.dart';
 import 'package:dyp/components/title.dart';
 import 'package:dyp/pages/footer/footer.dart';
-import 'package:dyp/pages/grid_products/grid_products.dart';
+import 'package:dyp/pages/products/grid_products.dart';
 import 'package:flutter/material.dart';
 
 class CctvPage extends StatelessWidget {

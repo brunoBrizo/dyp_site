@@ -1,8 +1,6 @@
 import 'package:dyp/components/typography.dart';
 import 'package:dyp/utils/utils.dart';
 import 'package:flutter/material.dart';
-
-import '../routes.dart';
 import 'color.dart';
 
 class SubMenu extends StatelessWidget {
@@ -46,8 +44,7 @@ class SubMenuDesktop extends StatelessWidget {
           Row(
             children: <Widget>[
               TextButton.icon(
-                  onPressed: () =>
-                      Navigator.pushNamed(context, Routes.proyectos),
+                  onPressed: () => navigate(context, '/proyectos'),
                   icon: Icon(
                     Icons.folder_open,
                     color: subMenuIcon,
@@ -60,7 +57,7 @@ class SubMenuDesktop extends StatelessWidget {
                 width: 40,
               ),
               TextButton.icon(
-                  onPressed: () => Navigator.pushNamed(context, Routes.cctv),
+                  onPressed: () => navigate(context, '/cctv'),
                   icon: Icon(
                     Icons.camera_alt_outlined,
                     color: subMenuIcon,
@@ -73,7 +70,7 @@ class SubMenuDesktop extends StatelessWidget {
                 width: 40,
               ),
               TextButton.icon(
-                  onPressed: () => Navigator.pushNamed(context, Routes.alarmas),
+                  onPressed: () => navigate(context, '/alarmas'),
                   icon: Icon(
                     Icons.alarm,
                     color: subMenuIcon,
@@ -86,8 +83,7 @@ class SubMenuDesktop extends StatelessWidget {
                 width: 40,
               ),
               TextButton.icon(
-                  onPressed: () =>
-                      Navigator.pushNamed(context, Routes.incendios),
+                  onPressed: () => navigate(context, '/incendios'),
                   icon: Icon(
                     Icons.fireplace_outlined,
                     color: subMenuIcon,
@@ -100,8 +96,7 @@ class SubMenuDesktop extends StatelessWidget {
                 width: 40,
               ),
               TextButton.icon(
-                  onPressed: () =>
-                      Navigator.pushNamed(context, Routes.mantenimientos),
+                  onPressed: () => navigate(context, '/mantenimientos'),
                   icon: Icon(
                     Icons.settings,
                     color: subMenuIcon,
@@ -126,8 +121,7 @@ class SubMenuDesktop extends StatelessWidget {
             Row(
               children: [
                 TextButton.icon(
-                    onPressed: () =>
-                        Navigator.pushNamed(context, Routes.videoPorteros),
+                    onPressed: () => navigate(context, '/video-porteros'),
                     icon: Icon(
                       Icons.video_call_outlined,
                       color: subMenuIcon,
@@ -140,8 +134,7 @@ class SubMenuDesktop extends StatelessWidget {
                   width: 40,
                 ),
                 TextButton.icon(
-                    onPressed: () =>
-                        Navigator.pushNamed(context, Routes.controlAcceso),
+                    onPressed: () => navigate(context, '/control-acceso'),
                     icon: Icon(
                       Icons.vpn_key_outlined,
                       color: subMenuIcon,
@@ -154,8 +147,7 @@ class SubMenuDesktop extends StatelessWidget {
                   width: 40,
                 ),
                 TextButton.icon(
-                    onPressed: () =>
-                        Navigator.pushNamed(context, Routes.telefoniaIp),
+                    onPressed: () => navigate(context, '/telefonia-ip'),
                     icon: Icon(
                       Icons.phone_callback_outlined,
                       color: subMenuIcon,
@@ -205,8 +197,7 @@ class SubMenuMobile extends StatelessWidget {
           Row(
             children: <Widget>[
               TextButton.icon(
-                  onPressed: () =>
-                      Navigator.pushNamed(context, Routes.proyectos),
+                  onPressed: () => navigate(context, '/proyectos'),
                   icon: Icon(
                     Icons.folder_open,
                     color: subMenuIcon,
@@ -219,7 +210,7 @@ class SubMenuMobile extends StatelessWidget {
                 width: 20,
               ),
               TextButton.icon(
-                  onPressed: () => Navigator.pushNamed(context, Routes.cctv),
+                  onPressed: () => navigate(context, '/cctv'),
                   icon: Icon(
                     Icons.camera_alt_outlined,
                     color: subMenuIcon,
@@ -232,7 +223,7 @@ class SubMenuMobile extends StatelessWidget {
                 width: 20,
               ),
               TextButton.icon(
-                  onPressed: () => Navigator.pushNamed(context, Routes.alarmas),
+                  onPressed: () => navigate(context, '/alarmas'),
                   icon: Icon(
                     Icons.alarm,
                     color: subMenuIcon,
@@ -257,8 +248,7 @@ class SubMenuMobile extends StatelessWidget {
           Row(
             children: <Widget>[
               TextButton.icon(
-                  onPressed: () =>
-                      Navigator.pushNamed(context, Routes.incendios),
+                  onPressed: () => navigate(context, '/incendios'),
                   icon: Icon(
                     Icons.fireplace_outlined,
                     color: subMenuIcon,
@@ -271,8 +261,7 @@ class SubMenuMobile extends StatelessWidget {
                 width: 40,
               ),
               TextButton.icon(
-                  onPressed: () =>
-                      Navigator.pushNamed(context, Routes.mantenimientos),
+                  onPressed: () => navigate(context, '/mantenimientos'),
                   icon: Icon(
                     Icons.settings,
                     color: subMenuIcon,
@@ -297,8 +286,7 @@ class SubMenuMobile extends StatelessWidget {
             Row(
               children: [
                 TextButton.icon(
-                    onPressed: () =>
-                        Navigator.pushNamed(context, Routes.videoPorteros),
+                    onPressed: () => navigate(context, '/video-porteros'),
                     icon: Icon(
                       Icons.video_call_outlined,
                       color: subMenuIcon,
@@ -311,8 +299,7 @@ class SubMenuMobile extends StatelessWidget {
                   width: 40,
                 ),
                 TextButton.icon(
-                    onPressed: () =>
-                        Navigator.pushNamed(context, Routes.telefoniaIp),
+                    onPressed: () => navigate(context, '/telefonia-ip'),
                     icon: Icon(
                       Icons.vpn_key_outlined,
                       color: subMenuIcon,
@@ -336,8 +323,7 @@ class SubMenuMobile extends StatelessWidget {
             Row(
               children: [
                 TextButton.icon(
-                    onPressed: () =>
-                        Navigator.pushNamed(context, Routes.controlAcceso),
+                    onPressed: () => navigate(context, '/control-acceso'),
                     icon: Icon(
                       Icons.vpn_key_outlined,
                       color: subMenuIcon,
