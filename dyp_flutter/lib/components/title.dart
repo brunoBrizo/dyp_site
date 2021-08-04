@@ -13,7 +13,7 @@ drawTitle(Size size, String title) {
       child: Center(
         child: Text(
           title,
-          style: headlineTextStyle,
+          style: pagesTitleStyle,
         ),
       ),
     ),

@@ -1,0 +1,291 @@
+{
+    "camaras" : 
+    [
+    	{
+        "name":"DAHUA B1A11P",
+        "tipo": "CCTV",
+        "image":"assets/images/camaras/b1a11p.png",
+        "url": "/B1A11P",
+        "description": "BULLET 720P LENTE 2.8MM 20MTS IR",
+        "pdf": "",
+        "brand": "DAHUA"
+    	},
+    	{
+        "name":"DAHUA DH-HAC-HDBW1230E",
+        "tipo": "CCTV",
+        "image":"assets/images/camaras/DH-HAC-HDBW1230E.jpeg",
+        "url": "/DH-HAC-HDBW1230E",
+        "description": "StarLight 4 en 1 - 1080P IK10",
+        "pdf": "assets/pdf/DH-HAC-HDBW1230E.pdf",
+        "brand": "DAHUA"
+    	}, 
+    	{
+        "name":"DAHUA DH-HAC-HFW1220B",
+        "tipo": "CCTV",
+        "image":"assets/images/camaras/DH-HAC-HFW1220B.png",
+        "url": "/DH-HAC-HFW1220B",
+        "description": "Imagen de DAHUA DH-HAC-HFW1220B BULLET CVI 1080 IR50 MTS.",
+        "pdf": "assets/pdf/DH-HAC-HFW1220B.pdf",
+        "brand": "DAHUA"
+    	}, 
+    	{
+        "name":"DAHUA DH-HAC-HF3231E",
+        "tipo": "CCTV",
+        "image":"assets/images/camaras/DH-HAC-HF3231E.png",
+        "url": "/DH-HAC-HF3231E",
+        "description": "CÁMARA BOX 1080 P",
+        "pdf": "assets/pdf/DH-HAC-HF3231E.pdf",
+        "brand": "DAHUA"
+    	}, 
+    	{
+        "name":"DAHUA DH-HAC-HFW1220R-VF",
+        "tipo": "CCTV",
+        "image":"assets/images/camaras/DH-HAC-HFW1220R-VF.png",
+        "url": "/DH-HAC-HFW1220R-VF",
+        "description": "BULLET 1080 VARIFOCAL 2mp 2.7-13.5mm",
+        "pdf": "assets/pdf/DH-HAC-HFW1220R-VF.pdf",
+        "brand": "DAHUA"
+    	}, 
+    	{
+        "name":"DAHUA EB2401P-0118B",
+        "tipo": "CCTV",
+        "image":"assets/images/camaras/EB2401P-0118B.jpeg",
+        "url": "/EB2401P-0118B",
+        "description": "FISHEYE 4 MPX. HD IK10",
+        "pdf": "assets/pdf/EB2401P-0118B.pdf",
+        "brand": "DAHUA"
+    	}, 
+    	{
+        "name":"DAHUA EB5500",
+        "tipo": "CCTV",
+        "image":"assets/images/camaras/EB5500.png",
+        "url": "/EB5500",
+        "description": "FISHEYE",
+        "pdf": "assets/pdf/EB5500.pdf",
+        "brand": "DAHUA"
+    	} 
+    ],
+    "video_grabadoras":
+    [
+        {
+        "name":"DAHUA DHI-XVR4116HS-X",
+        "tipo": "VIDEOG",
+        "image":"assets/images/video_grabadoras/DAHUA DHI-XVR4116HS-X.png",
+        "url": "/DHI-XVR4116HS-X",
+        "description": "Videograbador digital compacto 1U Penta-brid 720P de 16 canales",
+        "pdf": "assets/pdf/video_grabadoras/DAHUA DHI-XVR4116HS-X.pdf",
+        "brand": "DAHUA"
+    	},
+        {
+        "name":"DAHUA NVR4116-8P-4KS2",
+        "tipo": "VIDEOG",
+        "image":"assets/images/video_grabadoras/DAHUA NVR4116-8P-4KS2.png",
+        "url": "/NVR4116-8P-4KS2",
+        "description": "Video grabadora 16 canales Smart 1U 8PoE 4K&H.265 Lite Network",
+        "pdf": "assets/pdf/video_grabadoras/DAHUA NVR4116-8P-4KS2.pdf",
+        "brand": "DAHUA"
+    	},
+        {
+        "name":"DAHUA NVR4116HS-4KS2-L",
+        "tipo": "VIDEOG",
+        "image":"assets/images/video_grabadoras/DAHUA NVR4116HS-4KS2-L.png",
+        "url": "/NVR4116HS-4KS2-L",
+        "description": "Videograbadora de red 16 canales de 1U 4k&H.265",
+        "pdf": "assets/pdf/video_grabadoras/DAHUA NVR4116HS-4KS2-L.pdf",
+        "brand": "DAHUA"
+    	}        
+    ],
+    "control_acceso": [
+        {
+        "name":"DAHUA ASI7213X-T1",
+        "tipo": "CONTROLA",
+        "image":"assets/images/control_acceso/DAHUA ASI7213X-T1.png",
+        "url": "/ASI7213X-T1",
+        "description": "CONTROL ACCESO - TEMPERATURA",
+        "pdf": "assets/pdf/control_acceso/DAHUA ASI7213X-T1.pdf",
+        "brand": "DAHUA"
+    	},
+        {
+        "name":"DAHUA DHI-ASC1202C",
+        "tipo": "CONTROLA",
+        "image":"assets/images/control_acceso/DAHUA DHI-ASC1202C.png",
+        "url": "/DHI-ASC1202C",
+        "description": "CONTROLADORA DE DOS PUERTAS",
+        "pdf": "assets/pdf/control_acceso/DAHUA DHI-ASC1202C.pdf",
+        "brand": "DAHUA"
+    	},
+        {
+        "name":"DAHUA VTH2421FB-P",
+        "tipo": "CONTROLA",
+        "image":"assets/images/control_acceso/DAHUA VTH2421FB-P.png",
+        "url": "/VTH2421FB-P",
+        "description": "PANTALLA VIDEO PORTERO",
+        "pdf": "assets/pdf/control_acceso/DAHUA VTH2421FB-P.pdf",
+        "brand": "DAHUA"
+    	},
+        {
+        "name":"DAHUA VTH1560BW",
+        "tipo": "CONTROLA",
+        "image":"assets/images/control_acceso/DAHUA VTH1560BW.png",
+        "url": "/VTH1560BW",
+        "description": "PANTALLA VIDEO PORTERO",
+        "pdf": "assets/pdf/control_acceso/DAHUA VTH1560BW.pdf",
+        "brand": "DAHUA"
+    	},
+        {
+        "name":"DAHUA VTO2000A-2",
+        "tipo": "CONTROLA",
+        "image":"assets/images/control_acceso/DAHUA VTO2000A-2.png",
+        "url": "/VTO2000A-2",
+        "description": "MÓDULO EXTERIOR CÁMARA Y BOTÓN 2H",
+        "pdf": "assets/pdf/control_acceso/DAHUA VTO2000A-2.pdf",
+        "brand": "DAHUA"
+    	},
+        {
+        "name":"ZK K20",
+        "tipo": "CONTROLA",
+        "image":"assets/images/control_acceso/ZK K20.png",
+        "url": "/ZKK20",
+        "description": "Terminal IP de Huella Digital",
+        "pdf": "assets/pdf/control_acceso/ZK K20.pdf",
+        "brand": "ZK TEKO"
+    	},
+        {
+        "name":"ZK MA300",
+        "tipo": "CONTROLA",
+        "image":"assets/images/control_acceso/ZK MA300.png",
+        "url": "/ZKMA300",
+        "description": "Control de Acceso Biométrico IP para Exterior",
+        "pdf": "assets/pdf/control_acceso/ZK MA300.pdf",
+        "brand": "ZK TEKO"
+    	},
+        {
+        "name":"DAHUA ASI1212A-D",
+        "tipo": "CONTROLA_STANDALONE",
+        "image":"assets/images/control_acceso/DAHUA ASI1212A-D.png",
+        "url": "/ASI1212A-D",
+        "description": "CONTROLADORA STAND ALONE HUELLA",
+        "pdf": "assets/pdf/control_acceso/DAHUA ASI1212A-D.pdf",
+        "brand": "DAHUA"
+    	},
+        {
+        "name":"DAHUA ASI1212D",
+        "tipo": "CONTROLA_STANDALONE",
+        "image":"assets/images/control_acceso/DAHUA ASI1212D.png",
+        "url": "/ASI1212D",
+        "description": "CONTROLADOR EXTERIOR",
+        "pdf": "assets/pdf/control_acceso/DAHUA ASI1212D.pdf",
+        "brand": "DAHUA"
+    	},
+        {
+        "name":"DAHUA VTO2000A",
+        "tipo": "CONTROLA_STANDALONE",
+        "image":"assets/images/control_acceso/DAHUA VTO2000A.png",
+        "url": "/VTO2000A",
+        "description": "VIDEO PORTERO ANTIVANDÁLICO",
+        "pdf": "assets/pdf/control_acceso/DAHUA VTO2000A.pdf",
+        "brand": "DAHUA"
+    	},
+        {
+        "name":"DAHUA DHI-ASI1201A-D",
+        "tipo": "CONTROLA_STANDALONE",
+        "image":"assets/images/control_acceso/DAHUA DHI-ASI1201A-D.png",
+        "url": "/DHI-ASI1201A-D",
+        "description": "CONTROL ACCESO - LECTOR Y TECLADO",
+        "pdf": "assets/pdf/control_acceso/DAHUA DHI-ASI1201A-D.pdf",
+        "brand": "DAHUA"
+    	}
+    ],
+    "alarmas": [
+        {
+        "name":"HS2032",
+        "tipo": "A_PANELES",
+        "image":"assets/images/alarmas/HS2032.png",
+        "url": "/HS2032",
+        "description": "Panel de Control PowerSeries Neo",
+        "pdf": "assets/pdf/alarmas/HS2032.pdf",
+        "brand": "DSC"
+    	},
+        {
+        "name":"Placa PC585ZD",
+        "tipo": "A_PANELES",
+        "image":"assets/images/alarmas/Placa PC585ZD.png",
+        "url": "/PC585ZD",
+        "description": "Placa Central ALARMA DSC - PC585ZD 4 A 8 ZONAS",
+        "pdf": "assets/pdf/alarmas/Placa PC585ZD.pdf",
+        "brand": "DSC"
+    	},
+        {
+        "name":"DSC HS2064",
+        "tipo": "A_PANELES",
+        "image":"assets/images/alarmas/DSC HS2064.png",
+        "url": "/HS2064",
+        "description": "Paneles de control PowerSeries Neo",
+        "pdf": "assets/pdf/alarmas/DSC HS2064.pdf",
+        "brand": "DSC"
+    	},
+        {
+        "name":"PC1832",
+        "tipo": "A_PANELES",
+        "image":"assets/images/alarmas/PC1832.png",
+        "url": "/PC1832",
+        "description": "Panel de Control PowerSeries",
+        "pdf": "assets/pdf/alarmas/PC1832.pdf",
+        "brand": "DSC"
+    	},
+        {
+        "name":"PLACA 1864",
+        "tipo": "A_PANELES",
+        "image":"assets/images/alarmas/PLACA 1864.png",
+        "url": "/PLACA1864",
+        "description": "PLACA 1864",
+        "pdf": "assets/pdf/alarmas/PLACA 1864.pdf",
+        "brand": "DSC"
+    	},
+        {
+        "name":"Placa HS2128",
+        "tipo": "A_PANELES",
+        "image":"assets/images/alarmas/Placa HS2128.png",
+        "url": "/PlacaHS2128",
+        "description": "Paneles de control PowerSeries Neo",
+        "pdf": "assets/pdf/alarmas/Placa HS2128.pdf",
+        "brand": "DSC"
+    	},
+        {
+        "name":"DSC PC1555",
+        "tipo": "A_PANELES",
+        "image":"assets/images/alarmas/DSC PC1555.png",
+        "url": "/PC1555",
+        "description": "TECLADO LED 8 ZONAS",
+        "pdf": "",
+        "brand": "DSC"
+    	},
+        {
+        "name":"DSC HS2LED",
+        "tipo": "A_PANELES",
+        "image":"assets/images/alarmas/DSC HS2LED.png",
+        "url": "/HS2LED",
+        "description": "TECLADO 16 ZONAS",
+        "pdf": "",
+        "brand": "DSC"
+    	},
+        {
+        "name":"DSC HS2ICN",
+        "tipo": "A_PANELES",
+        "image":"assets/images/alarmas/DSC HS2ICN.png",
+        "url": "/HS2ICN",
+        "description": "Teclado cableado con íconos",
+        "pdf": "assets/pdf/alarmas/DSC HS2ICN.pdf",
+        "brand": "DSC"
+    	},
+        {
+        "name":"DSC LCD5511",
+        "tipo": "A_PANELES",
+        "image":"assets/images/alarmas/DSC LCD5511.png",
+        "url": "/LCD5511",
+        "description": "TECLADO ICONOS FIJO",
+        "pdf": "assets/pdf/alarmas/DSC LCD5511.pdf",
+        "brand": "DSC"
+    	}
+    ]
+}

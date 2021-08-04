@@ -3,7 +3,7 @@ import 'package:dyp/pages/cctv/cctv_page.dart';
 import 'package:dyp/pages/contact/contacto_page.dart';
 import 'package:dyp/pages/control_acceso_page.dart';
 import 'package:dyp/pages/incendios_page.dart';
-import 'package:dyp/pages/inicio_page.dart';
+import 'package:dyp/pages/inicio/inicio_page.dart';
 import 'package:dyp/pages/mantenimientos_page.dart';
 import 'package:dyp/pages/products/product_view.dart';
 import 'package:dyp/pages/proyectos_page.dart';

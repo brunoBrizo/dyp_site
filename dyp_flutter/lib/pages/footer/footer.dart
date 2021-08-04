@@ -117,7 +117,7 @@ _drawLine(double width) {
       height: 1,
       width: width,
       margin: EdgeInsets.only(bottom: 15),
-      color: Colors.black26);
+      color: Colors.white);
 }
 
 _drawFooterItems(BuildContext context, BoxConstraints constraints) {
@@ -140,7 +140,8 @@ _drawFooterItems(BuildContext context, BoxConstraints constraints) {
                       mainAxisAlignment: MainAxisAlignment.start,
                       children: [
                         IconButton(
-                            iconSize: 40.0,
+                            color: subMenuIcon,
+                            iconSize: 30.0,
                             icon: footerItem.icon,
                             onPressed: () {}),
                         SizedBox(

@@ -1,15 +1,15 @@
-import 'package:dyp/pages/cctv/cctv_page.dart';
-import 'package:dyp/pages/inicio_page.dart';
-import 'package:dyp/routes.dart';
+import 'package:dyp/pages/inicio/inicio_page.dart';
+import 'package:dyp/pages/quienes_somos_page.dart';
 import 'package:flutter/material.dart';
 import 'package:responsive_framework/responsive_framework.dart';
 import 'package:url_strategy/url_strategy.dart';
-import 'package:google_fonts/google_fonts.dart';
+
+import 'logic/routing/logic_routing.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
   setPathUrlStrategy();
-  Flurorouter.setupRouter();
+  //Flurorouter.setupRouter();
   runApp(MyApp());
 }
 
@@ -30,16 +30,15 @@ class MyApp extends StatelessWidget {
             ResponsiveBreakpoint.autoScale(2460, name: "4K"),
           ],
           background: Container(color: Color(0xFFF5F5F5))),
-      initialRoute: '/',
-      home: InicioPage(),
-      onGenerateRoute: Flurorouter.router.generator,
-      // onUnknownRoute: (settings) =>
-      //     MaterialPageRoute(builder: (context) => CctvPage()),
+      title: 'DyP Distribuciones y Proyectos',
+      home: QuienesSomosPage(),
+      routes: generateRoutes(context),
+      onUnknownRoute: AppRouter.generateRoute,
       theme: ThemeData(
           brightness: Brightness.light,
           primarySwatch: Colors.lightBlue,
           accentColor: Colors.amber,
-          textTheme: GoogleFonts.robotoTextTheme(Theme.of(context).textTheme)),
+          fontFamily: 'Open Sans'),
       debugShowCheckedModeBanner: false,
     );
   }

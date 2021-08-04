@@ -1,0 +1,11 @@
+const String InicioRoute = '/inicio';
+const String QuienesSomosRoute = '/quienes-somos';
+const String ContactoRoute = '/contacto';
+const String AlarmasRoute = '/alarmas';
+const String ProyectosRoute = '/proyectos';
+const String IncendiosRoute = '/incendios';
+const String CctvRoute = '/cctv';
+const String MantenimientosRoute = '/mantenimientos';
+const String VideoPorterosRoute = '/video-porteros';
+const String ControlAccesoRoute = '/control-acceso';
+const String TelefoniaIpRoute = '/telefonia-ip';

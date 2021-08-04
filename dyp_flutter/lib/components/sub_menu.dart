@@ -1,4 +1,5 @@
 import 'package:dyp/components/typography.dart';
+import 'package:dyp/logic/routing/routes.dart';
 import 'package:dyp/utils/utils.dart';
 import 'package:flutter/material.dart';
 import 'color.dart';
@@ -44,20 +45,20 @@ class SubMenuDesktop extends StatelessWidget {
           Row(
             children: <Widget>[
               TextButton.icon(
-                  onPressed: () => navigate(context, '/proyectos'),
+                  onPressed: () => redirect(context, ProyectosRoute),
                   icon: Icon(
                     Icons.folder_open,
                     color: subMenuIcon,
                   ),
                   label: Text(
-                    "Proyectos",
+                    "PROYECTOS",
                     style: buttonSubMenuTextStyle,
                   )),
               SizedBox(
                 width: 40,
               ),
               TextButton.icon(
-                  onPressed: () => navigate(context, '/cctv'),
+                  onPressed: () => redirect(context, CctvRoute),
                   icon: Icon(
                     Icons.camera_alt_outlined,
                     color: subMenuIcon,
@@ -70,39 +71,39 @@ class SubMenuDesktop extends StatelessWidget {
                 width: 40,
               ),
               TextButton.icon(
-                  onPressed: () => navigate(context, '/alarmas'),
+                  onPressed: () => redirect(context, AlarmasRoute),
                   icon: Icon(
                     Icons.alarm,
                     color: subMenuIcon,
                   ),
                   label: Text(
-                    "Alarmas",
+                    "ALARMAS",
                     style: buttonSubMenuTextStyle,
                   )),
               SizedBox(
                 width: 40,
               ),
               TextButton.icon(
-                  onPressed: () => navigate(context, '/incendios'),
+                  onPressed: () => redirect(context, IncendiosRoute),
                   icon: Icon(
                     Icons.fireplace_outlined,
                     color: subMenuIcon,
                   ),
                   label: Text(
-                    "Incendios",
+                    "INCENDIOS",
                     style: buttonSubMenuTextStyle,
                   )),
               SizedBox(
                 width: 40,
               ),
               TextButton.icon(
-                  onPressed: () => navigate(context, '/mantenimientos'),
+                  onPressed: () => redirect(context, MantenimientosRoute),
                   icon: Icon(
                     Icons.settings,
                     color: subMenuIcon,
                   ),
                   label: Text(
-                    "Mantenimiento",
+                    "MANTENIMIENTOS",
                     style: buttonSubMenuTextStyle,
                   ))
             ],
@@ -121,39 +122,39 @@ class SubMenuDesktop extends StatelessWidget {
             Row(
               children: [
                 TextButton.icon(
-                    onPressed: () => navigate(context, '/video-porteros'),
+                    onPressed: () => redirect(context, VideoPorterosRoute),
                     icon: Icon(
                       Icons.video_call_outlined,
                       color: subMenuIcon,
                     ),
                     label: Text(
-                      "Video Porteros",
+                      "VIDEO PORTEROS",
                       style: buttonSubMenuTextStyle,
                     )),
                 SizedBox(
                   width: 40,
                 ),
                 TextButton.icon(
-                    onPressed: () => navigate(context, '/control-acceso'),
+                    onPressed: () => redirect(context, ControlAccesoRoute),
                     icon: Icon(
                       Icons.vpn_key_outlined,
                       color: subMenuIcon,
                     ),
                     label: Text(
-                      "Control de Acceso",
+                      "CONTROL DE ACCESO",
                       style: buttonSubMenuTextStyle,
                     )),
                 SizedBox(
                   width: 40,
                 ),
                 TextButton.icon(
-                    onPressed: () => navigate(context, '/telefonia-ip'),
+                    onPressed: () => redirect(context, TelefoniaIpRoute),
                     icon: Icon(
                       Icons.phone_callback_outlined,
                       color: subMenuIcon,
                     ),
                     label: Text(
-                      "Telefonía IP",
+                      "TELEFONÍA IP",
                       style: buttonSubMenuTextStyle,
                     )),
               ],
@@ -197,7 +198,7 @@ class SubMenuMobile extends StatelessWidget {
           Row(
             children: <Widget>[
               TextButton.icon(
-                  onPressed: () => navigate(context, '/proyectos'),
+                  onPressed: () => redirect(context, ProyectosRoute),
                   icon: Icon(
                     Icons.folder_open,
                     color: subMenuIcon,
@@ -210,7 +211,7 @@ class SubMenuMobile extends StatelessWidget {
                 width: 20,
               ),
               TextButton.icon(
-                  onPressed: () => navigate(context, '/cctv'),
+                  onPressed: () => redirect(context, CctvRoute),
                   icon: Icon(
                     Icons.camera_alt_outlined,
                     color: subMenuIcon,
@@ -223,7 +224,7 @@ class SubMenuMobile extends StatelessWidget {
                 width: 20,
               ),
               TextButton.icon(
-                  onPressed: () => navigate(context, '/alarmas'),
+                  onPressed: () => redirect(context, AlarmasRoute),
                   icon: Icon(
                     Icons.alarm,
                     color: subMenuIcon,
@@ -248,26 +249,26 @@ class SubMenuMobile extends StatelessWidget {
           Row(
             children: <Widget>[
               TextButton.icon(
-                  onPressed: () => navigate(context, '/incendios'),
+                  onPressed: () => redirect(context, IncendiosRoute),
                   icon: Icon(
                     Icons.fireplace_outlined,
                     color: subMenuIcon,
                   ),
                   label: Text(
-                    "Incendios",
+                    "INCENDIOS",
                     style: buttonSubMenuTextStyle,
                   )),
               SizedBox(
                 width: 40,
               ),
               TextButton.icon(
-                  onPressed: () => navigate(context, '/mantenimientos'),
+                  onPressed: () => redirect(context, MantenimientosRoute),
                   icon: Icon(
                     Icons.settings,
                     color: subMenuIcon,
                   ),
                   label: Text(
-                    "Mantenimiento",
+                    "MANTENIMIENTO",
                     style: buttonSubMenuTextStyle,
                   ))
             ],
@@ -286,7 +287,7 @@ class SubMenuMobile extends StatelessWidget {
             Row(
               children: [
                 TextButton.icon(
-                    onPressed: () => navigate(context, '/video-porteros'),
+                    onPressed: () => redirect(context, VideoPorterosRoute),
                     icon: Icon(
                       Icons.video_call_outlined,
                       color: subMenuIcon,
@@ -299,7 +300,7 @@ class SubMenuMobile extends StatelessWidget {
                   width: 40,
                 ),
                 TextButton.icon(
-                    onPressed: () => navigate(context, '/telefonia-ip'),
+                    onPressed: () => redirect(context, TelefoniaIpRoute),
                     icon: Icon(
                       Icons.vpn_key_outlined,
                       color: subMenuIcon,
@@ -323,7 +324,7 @@ class SubMenuMobile extends StatelessWidget {
             Row(
               children: [
                 TextButton.icon(
-                    onPressed: () => navigate(context, '/control-acceso'),
+                    onPressed: () => redirect(context, ControlAccesoRoute),
                     icon: Icon(
                       Icons.vpn_key_outlined,
                       color: subMenuIcon,
@@ -344,5 +345,5 @@ Widget lineSeparator(double width) {
       height: 1,
       width: width,
       margin: EdgeInsets.only(bottom: 10, top: 10),
-      color: Colors.black26);
+      color: Colors.white);
 }

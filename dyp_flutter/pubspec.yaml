@@ -13,6 +13,7 @@ dependencies:
     sdk: flutter
   animations: ^2.0.0
   responsive_framework: ^0.1.0
+  responsive_builder: ^0.2.0+2
   carousel_slider: ^4.0.0-nullsafety.0
   url_launcher: ^6.0.2
   transparent_image: ^2.0.0
@@ -22,6 +23,7 @@ dependencies:
   fluttertoast: ^8.0.3
   http: ^0.13.1
   fluro: ^2.0.3
+  flutter_swiper:
 
   cupertino_icons: ^1.0.2
 
@@ -41,6 +43,27 @@ flutter:
     - assets/images/
     - assets/images/flags/
     - assets/images/camaras/
+    - assets/images/video_grabadoras/
     - assets/images/alarmas/
+    - assets/images/control_acceso/
+    - assets/images/alarmas/
+    - assets/images/clientes/
     - assets/pdf/camaras/
+    - assets/pdf/video_grabadoras/
+    - assets/pdf/control_acceso/
+    - assets/pdf/alarmas/
     - assets/json/
+
+  fonts:
+    - family: Open Sans
+      fonts:
+        - asset: assets/fonts/OpenSans-Regular.ttf
+        - asset: assets/fonts/OpenSans-Bold.ttf
+        - asset: assets/fonts/OpenSans-BoldItalic.ttf
+        - asset: assets/fonts/OpenSans-ExtraBold.ttf
+        - asset: assets/fonts/OpenSans-Italic.ttf
+        - asset: assets/fonts/OpenSans-Light.ttf
+        - asset: assets/fonts/OpenSans-LightItalic.ttf
+        - asset: assets/fonts/OpenSans-SemiBold.ttf
+        - asset: assets/fonts/OpenSans-SemiBoldItalic.ttf
+          #usar Open-Sans

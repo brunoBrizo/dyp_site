@@ -1,4 +1,5 @@
 import 'package:dyp/pages/footer/footer.dart';
+import 'package:dyp/pages/inicio/our_customers_banner.dart';
 import 'package:dyp/pages/services/services_section.dart';
 import 'package:dyp/utils/screen_helper.dart';
 import 'package:flutter/material.dart';
@@ -28,6 +29,10 @@ class InicioPage extends StatelessWidget {
               height: sizedBoxHeightAfterCarousel(context),
             ),
             ServicesSection(),
+            SizedBox(
+              height: 20.0,
+            ),
+            OurCustomersBanner(),
             SizedBox(
               height: 20.0,
             ),

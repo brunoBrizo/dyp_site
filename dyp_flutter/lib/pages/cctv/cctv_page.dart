@@ -22,7 +22,9 @@ class CctvPage extends StatelessWidget {
               SizedBox(
                 height: 20.0,
               ),
-              GridProducts(),
+              GridProducts(
+                productType: 'camaras',
+              ),
               SizedBox(
                 height: 20.0,
               ),

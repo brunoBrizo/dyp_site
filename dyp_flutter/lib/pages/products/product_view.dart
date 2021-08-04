@@ -123,7 +123,7 @@ class _ProductViewState extends State<ProductView> {
         color: mainSiteColor(),
         child: Center(
           child: Text(
-            product.type,
+            product.tipo,
             style: headlineTextStyle,
           ),
         ),

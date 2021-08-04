@@ -1,4 +1,6 @@
+import 'package:dyp/components/color.dart';
 import 'package:dyp/components/typography.dart';
+import 'package:dyp/logic/routing/routes.dart';
 import 'package:dyp/utils/utils.dart';
 import 'package:flutter/material.dart';
 
@@ -30,17 +32,22 @@ class DesktopNavbar extends StatelessWidget {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: <Widget>[
-                    GestureDetector(
-                      onTap: () => navigate(context, '/'),
-                      child: Text(
-                        "DyP Distribuciones y Proyectos",
-                        style: headlineTextStyle,
+                    MouseRegion(
+                      cursor: SystemMouseCursors.click,
+                      child: GestureDetector(
+                        onTap: () {
+                          redirect(context, InicioRoute);
+                        },
+                        child: Text(
+                          "DyP Distribuciones y Proyectos",
+                          style: headlineTextStyle,
+                        ),
                       ),
                     ),
                     Row(
                       children: <Widget>[
                         TextButton(
-                          onPressed: () => navigate(context, '/'),
+                          onPressed: () => redirect(context, InicioRoute),
                           child: Text(
                             "Inicio",
                             style: buttonTextStyle,
@@ -50,7 +57,7 @@ class DesktopNavbar extends StatelessWidget {
                           width: 30,
                         ),
                         TextButton(
-                          onPressed: () => navigate(context, '/quienes-somos'),
+                          onPressed: () => redirect(context, QuienesSomosRoute),
                           child: Text(
                             "¿Quiénes Somos?",
                             style: buttonTextStyle,
@@ -60,7 +67,7 @@ class DesktopNavbar extends StatelessWidget {
                           width: 30,
                         ),
                         TextButton(
-                          onPressed: () => navigate(context, '/contacto'),
+                          onPressed: () => redirect(context, ContactoRoute),
                           child: Text(
                             "Contacto",
                             style: buttonTextStyle,
@@ -70,7 +77,7 @@ class DesktopNavbar extends StatelessWidget {
                           width: 30,
                         ),
                         MaterialButton(
-                          color: Colors.red,
+                          color: textColorRed,
                           shape: RoundedRectangleBorder(
                               borderRadius:
                                   BorderRadius.all(Radius.circular(20.0))),
@@ -110,12 +117,15 @@ class MobileNavbar extends StatelessWidget {
           child: Container(
             margin: EdgeInsets.symmetric(vertical: 5),
             child: Column(children: <Widget>[
-              GestureDetector(
-                onTap: () => navigate(context, '/'),
-                child: Center(
-                  child: Text(
-                    "Distribuciones y Proyectos",
-                    style: headlineTextStyle,
+              MouseRegion(
+                cursor: SystemMouseCursors.click,
+                child: GestureDetector(
+                  onTap: () => redirect(context, InicioRoute),
+                  child: Center(
+                    child: Text(
+                      "Distribuciones y Proyectos",
+                      style: headlineTextStyle,
+                    ),
                   ),
                 ),
               ),
@@ -125,7 +135,7 @@ class MobileNavbar extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
                     TextButton(
-                      onPressed: () => navigate(context, '/'),
+                      onPressed: () => redirect(context, InicioRoute),
                       child: Text(
                         "Inicio",
                         style: buttonTextStyle,
@@ -135,7 +145,7 @@ class MobileNavbar extends StatelessWidget {
                       width: 30,
                     ),
                     TextButton(
-                      onPressed: () => navigate(context, '/quienes-somos'),
+                      onPressed: () => redirect(context, QuienesSomosRoute),
                       child: Text(
                         "¿Quiénes Somos?",
                         style: buttonTextStyle,
@@ -145,7 +155,7 @@ class MobileNavbar extends StatelessWidget {
                       width: 30,
                     ),
                     TextButton(
-                      onPressed: () => navigate(context, '/contacto'),
+                      onPressed: () => redirect(context, ContactoRoute),
                       child: Text(
                         "Contacto",
                         style: buttonTextStyle,
@@ -193,7 +203,12 @@ _drawFlags() {
         ),
         MouseRegion(
           cursor: SystemMouseCursors.click,
-          child: GestureDetector(onTap: () {}, child: Text(' +598 95022190')),
+          child: GestureDetector(
+              onTap: () async {
+                await sendWhatsAppMessage(
+                    '+59895022190', 'Buen dia quiero presupuesto');
+              },
+              child: Text(' +598 95022190')),
         ),
         SizedBox(
           width: 15.0,
@@ -214,7 +229,12 @@ _drawFlags() {
         ),
         MouseRegion(
           cursor: SystemMouseCursors.click,
-          child: GestureDetector(onTap: () {}, child: Text('+55 5591467212')),
+          child: GestureDetector(
+              onTap: () async {
+                await sendWhatsAppMessage(
+                    '+555591467212', 'Buen dia quiero presupuesto');
+              },
+              child: Text('+55 5591467212')),
         ),
       ],
     ),

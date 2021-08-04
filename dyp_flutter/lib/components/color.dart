@@ -5,9 +5,12 @@ Color textPrimary = Color(0xFF111111);
 Color textSecondary = Color(0xFF3A3A3A);
 
 //icons
-Color subMenuIcon = Color(0xFF3A3A3A);
+const subMenuIcon = Colors.white;
 
 //main color
 mainSiteColor() {
-  return Colors.lightBlue[100];
+  return textColorRed;
 }
+
+const Color textColorRed = Color.fromRGBO(0, 43, 87, 1);
+const subMenuTextColor = Colors.white;

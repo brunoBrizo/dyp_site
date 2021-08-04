@@ -1,5 +1,6 @@
 import 'package:dyp/models/product_model.dart';
 import 'package:dyp/pages/products/product_desc.dart';
+import 'package:dyp/utils/utils.dart';
 import 'package:flutter/material.dart';
 
 class ProductCard extends StatefulWidget {
@@ -20,7 +21,10 @@ class _ProductCardState extends State<ProductCard>
     return MouseRegion(
       cursor: SystemMouseCursors.click,
       child: GestureDetector(
-        onTap: () {},
+        onTap: () {
+          // navigate(
+          //     context, '/' + widget.product.tipo + '/' + widget.product.name);
+        },
         child: Card(
           // clipBehavior: Clip.hardEdge,
           elevation: 5.0,
@@ -103,7 +107,7 @@ class _ProductCardState extends State<ProductCard>
 
   _getPaddingForDescContainer(Size size) {
     final width = size.width;
-    print('width: ' + width.toString());
+
     if (width > 800.0) {
       return 0;
     } else {
@@ -113,7 +117,7 @@ class _ProductCardState extends State<ProductCard>
 
   _getHeightForDescContainer(Size size) {
     final height = size.height;
-    print('height: ' + height.toString());
+
     if (height > 1000.0) {
       return height * 0.11;
     } else if (height <= 1000.0 && height > 800.0) {
