@@ -1,3 +1,4 @@
+import 'package:dyp/components/color.dart';
 import 'package:dyp/components/constants.dart';
 import 'package:dyp/components/typography.dart';
 import 'package:flutter/material.dart';
@@ -23,12 +24,15 @@ class OurCustomersBannerDesk extends StatelessWidget {
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
     return Container(
+      width: size.width,
+      padding: EdgeInsets.symmetric(vertical: 50.0),
+      color: mainSiteColor(),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: <Widget>[
           Text(
             descripcion1OurCustomersBannerDesk,
-            style: textStylePrimaryBannerDesk,
+            style: textStyleSecondaryBannerDesk,
             textAlign: TextAlign.center,
           ),
           SizedBox(
@@ -36,7 +40,7 @@ class OurCustomersBannerDesk extends StatelessWidget {
           ),
           Text(
             descripcion2OurCustomersBannerDesk,
-            style: textStyleSecondaryBannerDesk,
+            style: textStylePrimaryBannerDesk,
             textAlign: TextAlign.center,
           ),
           SizedBox(
@@ -51,9 +55,16 @@ class OurCustomersBannerDesk extends StatelessWidget {
             height: 15,
           ),
           SizedBox(
-            height: size.height / 7,
-            width: size.width / 6.5,
+            height: size.height / 6,
+            width: size.width / 1.5,
             child: Swiper(
+              customLayoutOption:
+                  CustomLayoutOption(startIndex: -1, stateCount: 3)
+                      .addRotate([-45.0 / 180, 0.0, 45.0 / 180]).addTranslate([
+                Offset(-370.0, -40.0),
+                Offset(0.0, 0.0),
+                Offset(370.0, -40.0)
+              ]),
               itemBuilder: (BuildContext context, int index) {
                 return Container(
                     child: ColorFiltered(
@@ -70,8 +81,8 @@ class OurCustomersBannerDesk extends StatelessWidget {
               autoplay: true,
               duration: 1000,
               control: new SwiperControl(color: Colors.transparent),
-              viewportFraction: 0.7,
-              scale: 0.5,
+              viewportFraction: _getViewPortFraction(size.width),
+              scale: 0.8,
               itemCount: imagesOurCustomersBannerPage.length,
             ),
           ),
@@ -82,6 +93,16 @@ class OurCustomersBannerDesk extends StatelessWidget {
       ),
     );
   }
+
+  _getViewPortFraction(double width) {
+    if (width >= 1400.0) {
+      return 0.25;
+    } else if (width >= 1200.0 && width < 1400.0) {
+      return 0.3;
+    } else {
+      return 0.35;
+    }
+  }
 }
 
 class OurCustomersBannerTab extends StatelessWidget {
@@ -90,7 +111,9 @@ class OurCustomersBannerTab extends StatelessWidget {
     final size = MediaQuery.of(context).size;
     return SingleChildScrollView(
       child: Container(
-        width: size.width / 1.5,
+        width: size.width,
+        padding: EdgeInsets.only(top: 20.0, bottom: 50.0),
+        color: mainSiteColor(),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: <Widget>[
@@ -99,7 +122,7 @@ class OurCustomersBannerTab extends StatelessWidget {
             ),
             Text(
               descripcion1OurCustomersBannerDesk,
-              style: textStylePrimaryBannerDesk,
+              style: textStyleSecondaryBannerDesk,
               textAlign: TextAlign.center,
             ),
             SizedBox(
@@ -107,7 +130,7 @@ class OurCustomersBannerTab extends StatelessWidget {
             ),
             Text(
               descripcion2OurCustomersBannerDesk,
-              style: textStyleSecondaryBannerDesk,
+              style: textStylePrimaryBannerDesk,
               textAlign: TextAlign.center,
             ),
             SizedBox(
@@ -122,8 +145,8 @@ class OurCustomersBannerTab extends StatelessWidget {
               height: size.height / 30,
             ),
             SizedBox(
-              height: size.height / 9,
-              width: size.width / 6,
+              height: size.height / 5,
+              width: size.width,
               child: Swiper(
                 itemBuilder: (BuildContext context, int index) {
                   return Container(
@@ -141,7 +164,7 @@ class OurCustomersBannerTab extends StatelessWidget {
                 autoplay: true,
                 duration: 1000,
                 control: new SwiperControl(color: Colors.transparent),
-                viewportFraction: 0.7,
+                viewportFraction: _getViewPortFraction(size.width),
                 scale: 0.4,
                 itemCount: imagesOurCustomersBannerPage.length,
               ),
@@ -151,6 +174,18 @@ class OurCustomersBannerTab extends StatelessWidget {
       ),
     );
   }
+
+  _getViewPortFraction(double width) {
+    if (width >= 900.0) {
+      return 0.25;
+    } else if (width >= 800.0 && width < 900.0) {
+      return 0.3;
+    } else if (width >= 700.0 && width < 800.0) {
+      return 0.35;
+    } else {
+      return 0.4;
+    }
+  }
 }
 
 class OurCustomersBannerMob extends StatelessWidget {
@@ -158,7 +193,9 @@ class OurCustomersBannerMob extends StatelessWidget {
     final size = MediaQuery.of(context).size;
     return SingleChildScrollView(
       child: Container(
-        width: size.width / 1.5,
+        width: size.width,
+        padding: EdgeInsets.only(top: 20.0, bottom: 50.0),
+        color: mainSiteColor(),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: <Widget>[
@@ -167,7 +204,7 @@ class OurCustomersBannerMob extends StatelessWidget {
             ),
             Text(
               descripcion1OurCustomersBannerDesk,
-              style: description1BannersStyleMob,
+              style: description2BannersStyleMob,
               textAlign: TextAlign.center,
             ),
             SizedBox(
@@ -175,7 +212,7 @@ class OurCustomersBannerMob extends StatelessWidget {
             ),
             Text(
               descripcion2OurCustomersBannerDesk,
-              style: description2BannersStyleMob,
+              style: description1BannersStyleMob,
               textAlign: TextAlign.center,
             ),
             SizedBox(
@@ -190,8 +227,8 @@ class OurCustomersBannerMob extends StatelessWidget {
               height: size.height / 20,
             ),
             SizedBox(
-              height: size.height / 8.5,
-              width: size.width / 2,
+              height: size.height / 6,
+              width: size.width,
               child: Swiper(
                 itemBuilder: (BuildContext context, int index) {
                   return Container(
@@ -209,7 +246,7 @@ class OurCustomersBannerMob extends StatelessWidget {
                 autoplay: true,
                 duration: 1000,
                 control: new SwiperControl(color: Colors.transparent),
-                viewportFraction: 0.7,
+                viewportFraction: _getViewPortFraction(size.width),
                 scale: 0.4,
                 itemCount: imagesOurCustomersBannerPage.length,
               ),
@@ -218,5 +255,17 @@ class OurCustomersBannerMob extends StatelessWidget {
         ),
       ),
     );
+  }
+
+  _getViewPortFraction(double width) {
+    if (width >= 500.0) {
+      return 0.37;
+    } else if (width >= 400.0 && width < 500.0) {
+      return 0.47;
+    } else if (width >= 300.0 && width < 400.0) {
+      return 0.53;
+    } else {
+      return 0.6;
+    }
   }
 }

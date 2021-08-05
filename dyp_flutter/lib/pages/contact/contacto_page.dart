@@ -1,6 +1,7 @@
 import 'package:dyp/components/Navbar.dart';
 import 'package:dyp/components/constants.dart';
 import 'package:dyp/components/sub_menu.dart';
+import 'package:dyp/components/typography.dart';
 import 'package:dyp/pages/contact/contact_form.dart';
 import 'package:dyp/pages/footer/footer.dart';
 import 'package:flutter/material.dart';
@@ -54,12 +55,7 @@ class ContactoPage extends StatelessWidget {
                       children: [
                         Text(
                           '¿Tienes un proyecto? No dudes en consultarnos',
-                          style: TextStyle(
-                            fontSize: 24,
-                            /*  color: themeProvider.getTheme == Themes.lightTheme
-                      ? Colors.black
-                      : Colors.grey[100]*/
-                          ),
+                          style: contactFormTitulo,
                         ),
                         SizedBox(
                           height: 30.0,

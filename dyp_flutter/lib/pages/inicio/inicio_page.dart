@@ -1,6 +1,6 @@
 import 'package:dyp/pages/footer/footer.dart';
+import 'package:dyp/pages/inicio/best_products.dart';
 import 'package:dyp/pages/inicio/our_customers_banner.dart';
-import 'package:dyp/pages/services/services_section.dart';
 import 'package:dyp/utils/screen_helper.dart';
 import 'package:flutter/material.dart';
 import 'package:carousel_slider/carousel_slider.dart';
@@ -20,19 +20,18 @@ class InicioPage extends StatelessWidget {
           children: <Widget>[
             Navbar(),
             Padding(
-              padding:
-                  const EdgeInsets.symmetric(vertical: 5.0, horizontal: 20.0),
+              padding: const EdgeInsets.symmetric(vertical: 5.0),
               child: SubMenu(),
             ),
             getCarousel(context),
             SizedBox(
               height: sizedBoxHeightAfterCarousel(context),
             ),
-            ServicesSection(),
+            OurCustomersBanner(),
             SizedBox(
               height: 20.0,
             ),
-            OurCustomersBanner(),
+            BestProducts(),
             SizedBox(
               height: 20.0,
             ),
@@ -57,6 +56,7 @@ class InicioPage extends StatelessWidget {
 
   Widget carouselDesktop(Size size) {
     return Container(
+      padding: EdgeInsets.only(top: 20.0, bottom: 20.0),
       child: CarouselSlider(
         options: getCarouselOptions(size.height * 0.6),
         items: imageSliders,
@@ -66,6 +66,7 @@ class InicioPage extends StatelessWidget {
 
   Widget carouselMobile(Size size) {
     return Container(
+      padding: EdgeInsets.only(top: 20.0, bottom: 10.0),
       child: CarouselSlider(
         options: getCarouselOptions(320.0
             // size.height * 0.40,
@@ -87,9 +88,8 @@ class InicioPage extends StatelessWidget {
   }
 
   static List<String> _imgList = [
-    'assets/images/test1.jpg',
-    'assets/images/test2.jpg',
-    'assets/images/test3.jpg'
+    'assets/images/foto_pantalla_inicio/promo1.png',
+    'assets/images/foto_pantalla_inicio/promo2.png'
   ];
 
   final List<Widget> imageSliders = _imgList
@@ -100,7 +100,7 @@ class InicioPage extends StatelessWidget {
                   borderRadius: BorderRadius.all(Radius.circular(5.0)),
                   child: Stack(
                     children: <Widget>[
-                      Image.asset(item, fit: BoxFit.cover, width: 1000.0),
+                      Image.asset(item, fit: BoxFit.fill),
                     ],
                   )),
             ),

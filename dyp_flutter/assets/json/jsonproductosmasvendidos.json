@@ -1,0 +1,59 @@
+{
+    "masvendidos" : 
+    [
+        {
+        "name":"DAHUA HDW1239TL",
+        "tipo": "CCTV",
+        "image":"assets/images/camaras/DAHUA HDW1239TL.png",
+        "url": "/HDW1239TL",
+        "description": "Cámara de globo ocular Starlight HDCVI Full-Color de 2M",
+        "pdf": "assets/pdf/camaras/DAHUA HDW1239TL.pdf",
+        "brand": "DAHUA"
+    	},
+        {
+        "name":"DAHUA T1A11P",
+        "tipo": "CCTV",
+        "image":"assets/images/camaras/DAHUA T1A11P.png",
+        "url": "/T1A11P",
+        "description": "DOMO PLÁSTICO INTERIOR 2.88MM 20MTS IR",
+        "pdf": "assets/pdf/camaras/DAHUA T1A11P.pdf",
+        "brand": "DAHUA"
+    	},
+    	{
+        "name":"DAHUA B1A11P",
+        "tipo": "CCTV",
+        "image":"assets/images/camaras/b1a11p.png",
+        "url": "/B1A11P",
+        "description": "BULLET 720P LENTE 2.8MM 20MTS IR",
+        "pdf": "",
+        "brand": "DAHUA"
+    	},
+    	{
+        "name":"DAHUA XVR1B04",
+        "tipo": "VIDEOG",
+        "image":"assets/images/video_grabadoras/DAHUA XVR1B04.png",
+        "url": "/XVR1B04",
+        "description": "Videograbador digital Penta-brid 1080N / 720P Cooper 1U de 4 canales",
+        "pdf": "assets/pdf/video_grabadoras/DAHUA XVR1B04.pdf",
+        "brand": "DAHUA"
+    	},
+        {
+        "name":"DAHUA XVR1B08",
+        "tipo": "VIDEOG",
+        "image":"assets/images/video_grabadoras/DAHUA XVR1B08.png",
+        "url": "/XVR1B08",
+        "description": "Videograbador digital Penta-brid 1080N / 720P Cooper 1U de 8 canales",
+        "pdf": "assets/pdf/video_grabadoras/DAHUA XVR1B08.pdf",
+        "brand": "DAHUA"
+    	},
+        {
+        "name":"DAHUA XVR1A04/08",
+        "tipo": "VIDEOG",
+        "image":"assets/images/video_grabadoras/DAHUA XVR1A0408.png",
+        "url": "/XVR1A0408",
+        "description": "Videograbador digital Penta-brid 1080N / 720P Cooper 1U de 4/8 canales",
+        "pdf": "assets/pdf/video_grabadoras/DAHUA XVR1A0408.pdf",
+        "brand": "DAHUA"
+    	}
+    ]
+}

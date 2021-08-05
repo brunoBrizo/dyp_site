@@ -33,7 +33,7 @@ class Footer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 20),
+      padding: const EdgeInsets.symmetric(horizontal: 0),
       child: Container(
         // width: size.width * 0.95,
         color: mainSiteColor(),
@@ -100,7 +100,7 @@ _drawLastLine(BuildContext context) {
               child: MouseRegion(
                 cursor: SystemMouseCursors.click,
                 child: Text(
-                  "Designed by Arkam Software",
+                  "Diseñado por Arkam Software",
                   style: menuAndFooterText,
                 ),
               ),

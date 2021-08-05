@@ -15,17 +15,26 @@ const String gridButtonText = 'Ver más';
 //nuestros clientes
 const String descripcion1OurCustomersBannerDesk = "NUESTROS CLIENTES";
 const String descripcion2OurCustomersBannerDesk =
-    "Importantes empresas eligen nuestras soluciones";
+    "Importantes empresas nos eligen ";
 const String descripcion3OurCustomersBannerDesk =
     "La fidelidad y la confianza que nos depositan nuestros clientes día a día es la mejor carta de recomendación.";
 
 const List<String> imagesOurCustomersBannerPage = [
-  "assets/images/site/hush-puppies.png",
-  "assets/images/site/divino.png",
-  "assets/images/site/dfa.png",
-  "assets/images/site/cliente-colonia-express.png",
-  "assets/images/site/buquebus.png",
-  "assets/images/site/you.png",
-  "assets/images/site/stadium.png",
-  "assets/images/site/mimo.png",
+  "assets/images/clientes/asse.png",
+  "assets/images/clientes/anep.png",
+  "assets/images/clientes/dfa.png",
+  "assets/images/clientes/china.png",
+  "assets/images/clientes/dac.png",
+  "assets/images/clientes/idc.png",
+  "assets/images/clientes/idr.png",
+  "assets/images/clientes/mc.png",
+  "assets/images/clientes/ministerio.png",
+  "assets/images/clientes/ministerioeducacion.png",
+  "assets/images/clientes/neutral.png",
+  "assets/images/clientes/pasteur.png",
+  "assets/images/clientes/peluffo.png",
+  "assets/images/clientes/porto.png",
+  "assets/images/clientes/scremini.png",
+  "assets/images/clientes/subway.png",
+  "assets/images/clientes/theplace.png",
 ];

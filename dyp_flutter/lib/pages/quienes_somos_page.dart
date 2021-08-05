@@ -92,7 +92,7 @@ class QuienesSomosPage extends StatelessWidget {
           width: getMainContainerWidth(size),
           child: Text(
             text2,
-            style: bodyTextStyle,
+            style: quienesSomosTexto,
           ),
         ),
         Container(
@@ -126,7 +126,7 @@ class QuienesSomosPage extends StatelessWidget {
           width: getMainContainerWidth(size),
           child: Text(
             text6,
-            style: bodyTextStyle,
+            style: quienesSomosTexto,
           ),
         ),
         SizedBox(
@@ -154,7 +154,7 @@ class QuienesSomosPage extends StatelessWidget {
               padding: const EdgeInsets.only(left: 5.0),
               child: Text(
                 text,
-                style: textStyleJobsMainText,
+                style: quienesSomosTexto,
               ),
             ),
           ),

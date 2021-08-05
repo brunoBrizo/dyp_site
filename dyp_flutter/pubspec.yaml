@@ -48,6 +48,7 @@ flutter:
     - assets/images/control_acceso/
     - assets/images/alarmas/
     - assets/images/clientes/
+    - assets/images/foto_pantalla_inicio/
     - assets/pdf/camaras/
     - assets/pdf/video_grabadoras/
     - assets/pdf/control_acceso/

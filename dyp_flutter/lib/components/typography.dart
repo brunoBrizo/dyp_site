@@ -40,6 +40,12 @@ TextStyle buttonTextStyle = TextStyle(
     color: textPrimary,
     letterSpacing: 1);
 
+TextStyle phoneNumberStyle = TextStyle(
+    fontFamily: fontFamilyWeb,
+    fontSize: 14,
+    color: textPrimary,
+    fontWeight: FontWeight.w600);
+
 TextStyle buttonSubMenuTextStyle = TextStyle(
     fontFamily: fontFamilyWeb,
     fontSize: 15,
@@ -105,19 +111,19 @@ const TextStyle textStylePrimaryBannerDesk = TextStyle(
     fontWeight: FontWeight.w700,
     height: 1.0,
     fontSize: 18,
-    color: Color.fromRGBO(191, 44, 55, 0.9));
+    color: Colors.white70);
 const TextStyle textStyleSecondaryBannerDesk = TextStyle(
     fontFamily: fontFamilyWeb,
     fontWeight: FontWeight.w700,
     height: 1.0,
     fontSize: 34,
-    color: Color.fromRGBO(102, 102, 102, 0.9));
+    color: Colors.white);
 const TextStyle textStyleThirdBannerDesk = TextStyle(
     height: 1.5,
     fontWeight: FontWeight.w400,
     fontSize: 18,
     fontFamily: fontFamilyWeb,
-    color: Color.fromRGBO(102, 102, 102, 0.9));
+    color: Colors.white60);
 const TextStyle description1BannersStyleMob = TextStyle(
     fontWeight: FontWeight.w800,
     height: 1.0,
@@ -138,6 +144,20 @@ const TextStyle description3BannersStyleMob = TextStyle(
 
 const TextStyle quienesSomosSubtitulo = TextStyle(
     fontFamily: fontFamilyWeb,
-    fontSize: 16,
-    color: Colors.black,
-    fontWeight: FontWeight.w600);
+    fontSize: 18,
+    color: Color.fromRGBO(102, 102, 102, 0.9),
+    fontWeight: FontWeight.bold);
+
+const TextStyle quienesSomosTexto = TextStyle(
+    fontFamily: fontFamilyWeb,
+    fontWeight: FontWeight.w700,
+    height: 1.0,
+    fontSize: 14,
+    color: Color.fromRGBO(102, 102, 102, 0.9));
+
+const TextStyle contactFormTitulo = TextStyle(
+    fontFamily: fontFamilyWeb,
+    fontWeight: FontWeight.bold,
+    height: 1.0,
+    fontSize: 24,
+    color: Color.fromRGBO(102, 102, 102, 0.9));

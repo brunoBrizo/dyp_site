@@ -1,6 +1,24 @@
 {
     "camaras" : 
     [
+        {
+        "name":"DAHUA HDW1239TL",
+        "tipo": "CCTV",
+        "image":"assets/images/camaras/DAHUA HDW1239TL.png",
+        "url": "/HDW1239TL",
+        "description": "Cámara de globo ocular Starlight HDCVI Full-Color de 2M",
+        "pdf": "assets/pdf/camaras/DAHUA HDW1239TL.pdf",
+        "brand": "DAHUA"
+    	},
+        {
+        "name":"DAHUA T1A11P",
+        "tipo": "CCTV",
+        "image":"assets/images/camaras/DAHUA T1A11P.png",
+        "url": "/T1A11P",
+        "description": "DOMO PLÁSTICO INTERIOR 2.88MM 20MTS IR",
+        "pdf": "assets/pdf/camaras/DAHUA T1A11P.pdf",
+        "brand": "DAHUA"
+    	},
     	{
         "name":"DAHUA B1A11P",
         "tipo": "CCTV",
@@ -16,7 +34,7 @@
         "image":"assets/images/camaras/DH-HAC-HDBW1230E.jpeg",
         "url": "/DH-HAC-HDBW1230E",
         "description": "StarLight 4 en 1 - 1080P IK10",
-        "pdf": "assets/pdf/DH-HAC-HDBW1230E.pdf",
+        "pdf": "assets/pdf/camaras/DH-HAC-HDBW1230E.pdf",
         "brand": "DAHUA"
     	}, 
     	{
@@ -25,7 +43,7 @@
         "image":"assets/images/camaras/DH-HAC-HFW1220B.png",
         "url": "/DH-HAC-HFW1220B",
         "description": "Imagen de DAHUA DH-HAC-HFW1220B BULLET CVI 1080 IR50 MTS.",
-        "pdf": "assets/pdf/DH-HAC-HFW1220B.pdf",
+        "pdf": "assets/pdf/camaras/DH-HAC-HFW1220B.pdf",
         "brand": "DAHUA"
     	}, 
     	{
@@ -34,7 +52,7 @@
         "image":"assets/images/camaras/DH-HAC-HF3231E.png",
         "url": "/DH-HAC-HF3231E",
         "description": "CÁMARA BOX 1080 P",
-        "pdf": "assets/pdf/DH-HAC-HF3231E.pdf",
+        "pdf": "assets/pdf/camaras/DH-HAC-HF3231E.pdf",
         "brand": "DAHUA"
     	}, 
     	{
@@ -43,7 +61,7 @@
         "image":"assets/images/camaras/DH-HAC-HFW1220R-VF.png",
         "url": "/DH-HAC-HFW1220R-VF",
         "description": "BULLET 1080 VARIFOCAL 2mp 2.7-13.5mm",
-        "pdf": "assets/pdf/DH-HAC-HFW1220R-VF.pdf",
+        "pdf": "assets/pdf/camaras/DH-HAC-HFW1220R-VF.pdf",
         "brand": "DAHUA"
     	}, 
     	{
@@ -52,7 +70,7 @@
         "image":"assets/images/camaras/EB2401P-0118B.jpeg",
         "url": "/EB2401P-0118B",
         "description": "FISHEYE 4 MPX. HD IK10",
-        "pdf": "assets/pdf/EB2401P-0118B.pdf",
+        "pdf": "assets/pdf/camaras/EB2401P-0118B.pdf",
         "brand": "DAHUA"
     	}, 
     	{
@@ -61,12 +79,39 @@
         "image":"assets/images/camaras/EB5500.png",
         "url": "/EB5500",
         "description": "FISHEYE",
-        "pdf": "assets/pdf/EB5500.pdf",
+        "pdf": "assets/pdf/camaras/EB5500.pdf",
         "brand": "DAHUA"
     	} 
     ],
     "video_grabadoras":
     [
+        {
+        "name":"DAHUA XVR1B04",
+        "tipo": "VIDEOG",
+        "image":"assets/images/video_grabadoras/DAHUA XVR1B04.png",
+        "url": "/XVR1B04",
+        "description": "Videograbador digital Penta-brid 1080N / 720P Cooper 1U de 4 canales",
+        "pdf": "assets/pdf/video_grabadoras/DAHUA XVR1B04.pdf",
+        "brand": "DAHUA"
+    	},
+        {
+        "name":"DAHUA XVR1B08",
+        "tipo": "VIDEOG",
+        "image":"assets/images/video_grabadoras/DAHUA XVR1B08.png",
+        "url": "/XVR1B08",
+        "description": "Videograbador digital Penta-brid 1080N / 720P Cooper 1U de 8 canales",
+        "pdf": "assets/pdf/video_grabadoras/DAHUA XVR1B08.pdf",
+        "brand": "DAHUA"
+    	},
+        {
+        "name":"DAHUA XVR1A04/08",
+        "tipo": "VIDEOG",
+        "image":"assets/images/video_grabadoras/DAHUA XVR1A0408.png",
+        "url": "/XVR1A0408",
+        "description": "Videograbador digital Penta-brid 1080N / 720P Cooper 1U de 4/8 canales",
+        "pdf": "assets/pdf/video_grabadoras/DAHUA XVR1A0408.pdf",
+        "brand": "DAHUA"
+    	},
         {
         "name":"DAHUA DHI-XVR4116HS-X",
         "tipo": "VIDEOG",

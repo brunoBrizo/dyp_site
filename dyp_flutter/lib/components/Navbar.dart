@@ -208,7 +208,10 @@ _drawFlags() {
                 await sendWhatsAppMessage(
                     '+59895022190', 'Buen dia quiero presupuesto');
               },
-              child: Text(' +598 95022190')),
+              child: Text(
+                ' +598 95022190',
+                style: phoneNumberStyle,
+              )),
         ),
         SizedBox(
           width: 15.0,
@@ -234,7 +237,10 @@ _drawFlags() {
                 await sendWhatsAppMessage(
                     '+555591467212', 'Buen dia quiero presupuesto');
               },
-              child: Text('+55 5591467212')),
+              child: Text(
+                '+55 5591467212',
+                style: phoneNumberStyle,
+              )),
         ),
       ],
     ),

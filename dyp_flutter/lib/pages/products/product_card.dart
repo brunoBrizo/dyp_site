@@ -1,6 +1,5 @@
 import 'package:dyp/models/product_model.dart';
 import 'package:dyp/pages/products/product_desc.dart';
-import 'package:dyp/utils/utils.dart';
 import 'package:flutter/material.dart';
 
 class ProductCard extends StatefulWidget {
@@ -27,7 +26,7 @@ class _ProductCardState extends State<ProductCard>
         },
         child: Card(
           // clipBehavior: Clip.hardEdge,
-          elevation: 5.0,
+          elevation: 3.0,
           shape: new RoundedRectangleBorder(
               borderRadius: new BorderRadius.circular(15.0)),
           color: Colors.white,
@@ -75,11 +74,11 @@ class _ProductCardState extends State<ProductCard>
   }
 
   static List<Color> kitGradients = [
-    // new Color.fromRGBO(103, 218, 255, 1.0),
-    // new Color.fromRGBO(3, 169, 244, 1.0),
-    // new Color.fromRGBO(0, 122, 193, 1.0),
-    Colors.blueGrey.shade800,
-    Colors.black87,
+    Color.fromRGBO(0, 79, 130, 1),
+    Color.fromRGBO(0, 102, 155, 1),
+    // Color.fromRGBO(0, 102, 130, 1),
+    // Color.fromRGBO(0, 102, 155, 1)
+    //new Color.fromRGBO(102, 102, 102, 0.9),
   ];
 
   @override

@@ -1,5 +1,4 @@
 import 'package:dyp/pages/inicio/inicio_page.dart';
-import 'package:dyp/pages/quienes_somos_page.dart';
 import 'package:flutter/material.dart';
 import 'package:responsive_framework/responsive_framework.dart';
 import 'package:url_strategy/url_strategy.dart';
@@ -31,7 +30,7 @@ class MyApp extends StatelessWidget {
           ],
           background: Container(color: Color(0xFFF5F5F5))),
       title: 'DyP Distribuciones y Proyectos',
-      home: QuienesSomosPage(),
+      home: InicioPage(),
       routes: generateRoutes(context),
       onUnknownRoute: AppRouter.generateRoute,
       theme: ThemeData(
