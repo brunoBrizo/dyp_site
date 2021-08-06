@@ -68,15 +68,21 @@ class InicioPage extends StatelessWidget {
     return Container(
       padding: EdgeInsets.only(top: 20.0, bottom: 10.0),
       child: CarouselSlider(
-        options: getCarouselOptions(320.0
-            // size.height * 0.40,
-            ),
+        options: getCarouselOptions(size.width),
         items: imageSliders,
       ),
     );
   }
 
-  CarouselOptions getCarouselOptions(double height) {
+  CarouselOptions getCarouselOptions(double width) {
+    double height;
+    if (width >= 650.0) {
+      height = 550.0;
+    } else if (width >= 500.0 && width < 650.0) {
+      height = 475.0;
+    } else {
+      height = 420.0;
+    }
     return CarouselOptions(
       height: height,
       autoPlay: true,

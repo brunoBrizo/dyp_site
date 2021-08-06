@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'package:dyp/components/typography.dart';
 import 'package:dyp/models/product_model.dart';
 import 'package:dyp/pages/products/product_card.dart';
 import 'package:dyp/utils/screen_helper.dart';
@@ -84,8 +85,11 @@ class _BestProductsState extends State<BestProducts> {
     return Column(
       children: [
         Container(
-          padding: EdgeInsets.symmetric(vertical: 20.0),
-          child: Text('PRODUCTOS MAS VENDIDOS'),
+          padding: EdgeInsets.only(top: 50.0, bottom: 40.0),
+          child: Text(
+            'PRODUCTOS MAS VENDIDOS',
+            style: bestProductsTitle,
+          ),
         ),
         Container(
           constraints: BoxConstraints(maxHeight: double.infinity),
@@ -123,29 +127,40 @@ class _BestProductsState extends State<BestProducts> {
     double itemHeight = _getHeightForGridViewTab(size);
     double itemWidth = size.width;
 
-    return Container(
-      constraints: BoxConstraints(maxHeight: double.infinity),
-      width: size.width * 0.7,
-      child: GridView.count(
-          controller: _scrollController,
-          childAspectRatio: (itemWidth / itemHeight / 1.7),
-          shrinkWrap: true,
-          physics: NeverScrollableScrollPhysics(),
-          mainAxisSpacing: _mainAxisSpacing,
-          crossAxisSpacing: _crossAxisSpacing,
-          crossAxisCount: _crossAxisCount,
-          children: new List<Widget>.generate(list == null ? 0 : list.length,
-              (index) {
-            if (list == null) {
-              return CircularProgressIndicator();
-            } else {
-              return new GridTile(
-                child: ProductCard(
-                  product: list[index],
-                ),
-              );
-            }
-          })),
+    return Column(
+      children: [
+        Container(
+          padding: EdgeInsets.only(top: 50.0, bottom: 40.0),
+          child: Text(
+            'PRODUCTOS MÁS VENDIDOS',
+            style: bestProductsTitle,
+          ),
+        ),
+        Container(
+          constraints: BoxConstraints(maxHeight: double.infinity),
+          width: size.width * 0.7,
+          child: GridView.count(
+              controller: _scrollController,
+              childAspectRatio: (itemWidth / itemHeight / 1.7),
+              shrinkWrap: true,
+              physics: NeverScrollableScrollPhysics(),
+              mainAxisSpacing: _mainAxisSpacing,
+              crossAxisSpacing: _crossAxisSpacing,
+              crossAxisCount: _crossAxisCount,
+              children: new List<Widget>.generate(
+                  list == null ? 0 : list.length, (index) {
+                if (list == null) {
+                  return CircularProgressIndicator();
+                } else {
+                  return new GridTile(
+                    child: ProductCard(
+                      product: list[index],
+                    ),
+                  );
+                }
+              })),
+        )
+      ],
     );
   }
 
@@ -155,6 +170,13 @@ class _BestProductsState extends State<BestProducts> {
       width: size.width * 0.7,
       child: Column(
         children: <Widget>[
+          Container(
+            padding: EdgeInsets.only(top: 50.0, bottom: 40.0),
+            child: Text(
+              'PRODUCTOS MÁS VENDIDOS',
+              style: bestProductsTitle,
+            ),
+          ),
           ListView.builder(
               controller: _scrollController,
               physics: NeverScrollableScrollPhysics(),

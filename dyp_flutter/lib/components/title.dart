@@ -5,7 +5,7 @@ import 'color.dart';
 
 drawTitle(Size size, String title) {
   return Padding(
-    padding: EdgeInsets.symmetric(horizontal: 20),
+    padding: EdgeInsets.symmetric(horizontal: 0),
     child: Container(
       width: size.width,
       height: 100.0,

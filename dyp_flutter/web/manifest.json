@@ -1,11 +1,11 @@
 {
-    "name": "dyp_flutter",
-    "short_name": "dyp_flutter",
+    "name": "DyP Web",
+    "short_name": "DyP",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
+    "description": "Distribuciones y Proyectos",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [

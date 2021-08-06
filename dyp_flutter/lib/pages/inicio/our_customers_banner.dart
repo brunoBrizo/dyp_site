@@ -136,10 +136,13 @@ class OurCustomersBannerTab extends StatelessWidget {
             SizedBox(
               height: size.height / 30,
             ),
-            Text(
-              descripcion3OurCustomersBannerDesk,
-              style: textStyleThirdBannerDesk,
-              textAlign: TextAlign.center,
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 5.0),
+              child: Text(
+                descripcion3OurCustomersBannerDesk,
+                style: textStyleThirdBannerDesk,
+                textAlign: TextAlign.center,
+              ),
             ),
             SizedBox(
               height: size.height / 30,
@@ -218,10 +221,13 @@ class OurCustomersBannerMob extends StatelessWidget {
             SizedBox(
               height: size.height / 30,
             ),
-            Text(
-              descripcion3OurCustomersBannerDesk,
-              style: description3BannersStyleMob,
-              textAlign: TextAlign.center,
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 5.0),
+              child: Text(
+                descripcion3OurCustomersBannerDesk,
+                style: description3BannersStyleMob,
+                textAlign: TextAlign.center,
+              ),
             ),
             SizedBox(
               height: size.height / 20,

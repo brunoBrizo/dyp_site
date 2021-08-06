@@ -1,3 +1,4 @@
+import 'package:dyp/logic/routing/routes.dart';
 import 'package:dyp/models/product_model.dart';
 import 'package:dyp/pages/products/product_desc.dart';
 import 'package:flutter/material.dart';
@@ -20,9 +21,9 @@ class _ProductCardState extends State<ProductCard>
     return MouseRegion(
       cursor: SystemMouseCursors.click,
       child: GestureDetector(
-        onTap: () {
-          // navigate(
-          //     context, '/' + widget.product.tipo + '/' + widget.product.name);
+        onTap: () async {
+          await Navigator.pushNamed(context, ProductDetailsRoute,
+              arguments: <String, Product>{'product': widget.product});
         },
         child: Card(
           // clipBehavior: Clip.hardEdge,

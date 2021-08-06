@@ -85,7 +85,7 @@ const TextStyle textStyleNewsTextBold = TextStyle(
 const TextStyle textStyleProductDetailsTitle = TextStyle(
     fontFamily: fontFamilyWeb,
     fontSize: 22,
-    color: Colors.black,
+    color: Color.fromRGBO(102, 102, 102, 0.9),
     fontWeight: FontWeight.bold);
 
 const TextStyle textStyleJobsMainText = TextStyle(
@@ -97,7 +97,7 @@ const TextStyle textStyleJobsMainText = TextStyle(
 const TextStyle textStyleVolverText = TextStyle(
     fontFamily: fontFamilyWeb,
     fontSize: 12,
-    color: Colors.black,
+    color: Color.fromRGBO(102, 102, 102, 0.9),
     fontWeight: FontWeight.bold);
 
 const TextStyle textStyleButtonSendCv = TextStyle(
@@ -128,19 +128,19 @@ const TextStyle description1BannersStyleMob = TextStyle(
     fontWeight: FontWeight.w800,
     height: 1.0,
     fontFamily: fontFamilyWeb,
-    fontSize: 14,
-    color: Color.fromRGBO(191, 44, 55, 0.9));
+    fontSize: 18,
+    color: Colors.white70);
 const TextStyle description2BannersStyleMob = TextStyle(
     fontWeight: FontWeight.w800,
     fontFamily: fontFamilyWeb,
-    fontSize: 20,
-    color: Color.fromRGBO(102, 102, 102, 0.9));
+    fontSize: 30,
+    color: Colors.white);
 
 const TextStyle description3BannersStyleMob = TextStyle(
     height: 1.0,
     fontFamily: fontFamilyWeb,
-    fontSize: 15,
-    color: Color.fromRGBO(102, 102, 102, 0.9));
+    fontSize: 16,
+    color: Colors.white60);
 
 const TextStyle quienesSomosSubtitulo = TextStyle(
     fontFamily: fontFamilyWeb,
@@ -160,4 +160,11 @@ const TextStyle contactFormTitulo = TextStyle(
     fontWeight: FontWeight.bold,
     height: 1.0,
     fontSize: 24,
+    color: Color.fromRGBO(102, 102, 102, 0.9));
+
+const TextStyle bestProductsTitle = TextStyle(
+    fontFamily: fontFamilyWeb,
+    fontWeight: FontWeight.w700,
+    height: 1.0,
+    fontSize: 34,
     color: Color.fromRGBO(102, 102, 102, 0.9));

@@ -83,3 +83,21 @@ redirect(BuildContext context, String redirectTo) async {
 DateTime convertStringToDateTime(String tmst) {
   return DateTime.parse(tmst);
 }
+
+getProductJsonCategory(String productType) {
+  if (productType == 'CCTV') {
+    return 'camaras';
+  }
+  if (productType == 'VIDEOG') {
+    return 'video_grabadoras';
+  }
+  if (productType == 'CONTROLA') {
+    return 'control_acceso';
+  }
+  if (productType == 'CONTROLA_STANDALONE') {
+    return 'control_acceso';
+  }
+  if (productType == 'A_PANELES') {
+    return 'alarmas';
+  }
+}

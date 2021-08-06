@@ -21,16 +21,15 @@ class _ProductDetailState extends State<ProductDetail> {
   Product productSuggestOne;
   Product productSuggestTwo;
   var jsonProducts;
-  List<dynamic> productsString;
+  List<dynamic> productsString = [];
   List<Product> productLst;
   List<Product> productLstFiltered;
 
   _loadJson() async {
-    String data =
-        await rootBundle.loadString('assets/products/jsonproduct.json');
+    String data = await rootBundle.loadString('assets/json/jsonproductos.json');
     setState(() {
       jsonProducts = json.decode(data);
-      productsString = jsonProducts['products'];
+      productsString = jsonProducts[getProductJsonCategory(product.tipo)];
       productLst = productsString.map((val) => Product.fromJson(val)).toList();
     });
 
@@ -39,33 +38,8 @@ class _ProductDetailState extends State<ProductDetail> {
 
   _filterRandomProducts() async {
     productLst.shuffle();
-    if (product.tipo != 'undefined') {
-      productLstFiltered = productLst
-          .where((p) => p.tipo == product.tipo)
-          .where((p) => p.name != product.name)
-          .take(2)
-          .toList();
-    } else if (product.brand != 'todas') {
-      productLstFiltered = productLst
-          .where((p) => p.brand == product.brand)
-          .where((p) => p.name != product.name)
-          .take(2)
-          .toList();
-    } else if (product.tipo != 'undefined') {
-      productLstFiltered = productLst
-          .where((p) => p.tipo == product.tipo)
-          .where((p) => p.name != product.name)
-          .take(2)
-          .toList();
-    } else {
-      productLstFiltered = productLst.take(2).toList();
-    }
-
-    if (productLstFiltered.length > 2) {
-      productLstFiltered = productLstFiltered.take(2).toList();
-    } else if (productLstFiltered.length < 2) {
-      productLstFiltered = productLst.take(2).toList();
-    }
+    productLst.removeWhere((element) => element.name == product.name);
+    productLstFiltered = productLst.take(2).toList();
 
     productSuggestOne = productLstFiltered[0];
     productSuggestTwo = productLstFiltered[1];
@@ -98,8 +72,7 @@ class _ProductDetailState extends State<ProductDetail> {
             children: <Widget>[
               Navbar(),
               Padding(
-                padding:
-                    const EdgeInsets.symmetric(vertical: 5.0, horizontal: 20.0),
+                padding: const EdgeInsets.symmetric(vertical: 5.0),
                 child: SubMenu(),
               ),
               _getBodyBySize(context, size),
@@ -142,7 +115,7 @@ class _ProductDetailState extends State<ProductDetail> {
                   child: _drawBodyDesktop(context, size),
                 ),
                 Padding(
-                  padding: const EdgeInsets.only(left: 20.0),
+                  padding: const EdgeInsets.only(left: 50.0),
                   child: Column(mainAxisSize: MainAxisSize.min, children: [
                     drawDesktopRightMenuProductDetailsPage(
                         context, size, productSuggestOne, productSuggestTwo),
@@ -162,29 +135,27 @@ class _ProductDetailState extends State<ProductDetail> {
       children: [
         _drawGoBackText(context, size),
         Container(
-          padding: EdgeInsets.only(top: 5.0, bottom: 25.0),
+          padding: EdgeInsets.only(top: 5.0, bottom: 5.0),
           width: getMainContainerWidth(size),
           child: Text(
             product.name,
             style: textStyleProductDetailsTitle,
           ),
         ),
-        IntrinsicHeight(
-          child: Row(
-            children: [
-              Padding(
-                padding: EdgeInsets.only(bottom: 20.0, right: 10.0),
-                child: Container(
-                  child: Image.asset(
-                    product.image,
-                    width: getMainContainerWidth(size) * 0.49,
-                    fit: BoxFit.fill,
-                  ),
+        Column(
+          children: [
+            Padding(
+              padding: EdgeInsets.only(bottom: 5.0, right: 10.0),
+              child: Container(
+                child: Image.asset(
+                  product.image,
+                  height: 300.0,
+                  fit: BoxFit.fill,
                 ),
               ),
-              _drawProductRightColumnDesk(size)
-            ],
-          ),
+            ),
+            _drawProductRightColumnDesk(size)
+          ],
         ),
       ],
     );
@@ -325,14 +296,14 @@ class _ProductDetailState extends State<ProductDetail> {
     double containerWidth;
     double menuSize;
     if (size.width > 1200.0) {
-      containerWidth = size.width * 0.21;
-      menuSize = containerWidth * 0.5;
+      containerWidth = size.width * 0.19;
+      menuSize = containerWidth * 0.48;
     } else if (size.width <= 1200.0 && size.width > 1050.0) {
-      containerWidth = size.width * 0.22;
-      menuSize = containerWidth * 0.47;
+      containerWidth = size.width * 0.2;
+      menuSize = containerWidth * 0.4;
     } else if (size.width <= 1050.0 && size.width >= 950.0) {
-      containerWidth = size.width * 0.23;
-      menuSize = containerWidth * 0.42;
+      containerWidth = size.width * 0.22;
+      menuSize = containerWidth * 0.5;
     } else if (size.width < 950.0 && size.width >= 750.0) {
       containerWidth = size.width * 0.9;
       menuSize = size.width * 0.37;
@@ -349,7 +320,7 @@ class _ProductDetailState extends State<ProductDetail> {
           Padding(
             padding: const EdgeInsets.symmetric(vertical: 10.0),
             child: Text(
-              'OTROS PRODUCTOS',
+              'PRODUCTOS SIMILARES',
               textAlign: TextAlign.start,
               style: textStyleJobsDetailMainText,
             ),
@@ -383,7 +354,7 @@ class _ProductDetailState extends State<ProductDetail> {
                 child: GestureDetector(
                   onTap: () async {},
                   child: Padding(
-                    padding: const EdgeInsets.only(left: 20.0),
+                    padding: const EdgeInsets.only(left: 20.0, top: 5.0),
                     child: Text(
                       productOne.name,
                       textAlign: TextAlign.start,
@@ -393,7 +364,7 @@ class _ProductDetailState extends State<ProductDetail> {
                 ),
               ),
               SizedBox(
-                height: 45.0,
+                height: 55.0,
               ),
               MouseRegion(
                 cursor: SystemMouseCursors.click,
@@ -413,7 +384,7 @@ class _ProductDetailState extends State<ProductDetail> {
                 child: GestureDetector(
                   onTap: () async {},
                   child: Padding(
-                    padding: const EdgeInsets.only(left: 20.0),
+                    padding: const EdgeInsets.only(left: 20.0, top: 5.0),
                     child: Text(
                       productTwo.name,
                       textAlign: TextAlign.start,

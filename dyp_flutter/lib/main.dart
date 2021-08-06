@@ -8,7 +8,6 @@ import 'logic/routing/logic_routing.dart';
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
   setPathUrlStrategy();
-  //Flurorouter.setupRouter();
   runApp(MyApp());
 }
 

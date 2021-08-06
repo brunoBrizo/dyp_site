@@ -9,3 +9,4 @@ const String MantenimientosRoute = '/mantenimientos';
 const String VideoPorterosRoute = '/video-porteros';
 const String ControlAccesoRoute = '/control-acceso';
 const String TelefoniaIpRoute = '/telefonia-ip';
+const String ProductDetailsRoute = '/productos/detalle';

@@ -6,6 +6,7 @@ import 'package:dyp/pages/control_acceso_page.dart';
 import 'package:dyp/pages/incendios_page.dart';
 import 'package:dyp/pages/inicio/inicio_page.dart';
 import 'package:dyp/pages/mantenimientos_page.dart';
+import 'package:dyp/pages/products/product_details.dart';
 import 'package:dyp/pages/proyectos_page.dart';
 import 'package:dyp/pages/quienes_somos_page.dart';
 import 'package:dyp/pages/telefonia_ip_page.dart';
@@ -26,6 +27,7 @@ Map<String, WidgetBuilder> generateRoutes(BuildContext context) {
     VideoPorterosRoute: (context) => VideoPorterosPage(),
     ControlAccesoRoute: (context) => ControlAccesoPage(),
     TelefoniaIpRoute: (context) => TelefoniaIpPage(),
+    ProductDetailsRoute: (BuildContext context) => ProductDetail(),
   };
   return routes;
 }
